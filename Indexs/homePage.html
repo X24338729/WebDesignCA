@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			
+			<!-- Meta Data -->
+			<meta charset="UTF-8">
+			<meta name="author" content="Alpsan Karademir">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="description">
+			<meta name="keywords" content="tags">
+			
+			<!-- Title -->
+			<title>Home Page</title>
+			
+			<!-- Bootstrap CSS -->
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+			
+			<!-- GoogleFonts -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+			
+			<!-- Your own CSS -->
+			<link rel="stylesheet" href="../style.css">
+			
+		</head>
+		
+		<body class="hm_body">
+			<img class="hm_pics" id="hm_pic1" src="../images/deers.png" alt="">
+			<div class="hm_row1">
+				<div class="dropdown">
+					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Menu
+					</a>
+
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Page1</a></li>
+						<li><a class="dropdown-item" href="#">Page2</a></li>
+						<li><a class="dropdown-item" href="#">Page3</a></li>
+						<li><a class="dropdown-item" href="#">page4</a></li>
+						<li><a class="dropdown-item" href="#">page5</a></li>
+						<li><a class="dropdown-item" href="#">page6</a></li>
+					</ul>
+				</div>
+					<nav class="hm_nav">
+						<button type="button" class="hm_buttons" id="hm_homepage" onclick="homebutton()">Home</button>
+							<select class="hm_pages hm_pageselect" id="hm_pages" onchange="pages(this)">
+							<option class="hm_ophi" value="" disabled selected hidden>☰Pages</option>
+							<option class="hm_op" value="page2.html">Page2</option>
+							<option class="hm_op" value="page3.html">Page3</option>
+							<option class="hm_op" value="page4.html">Page4</option>
+							<option class="hm_op" value="page5.html">Page5</option>
+							<option class="hm_op" value="page6.html">Page6</option>
+							<option class="hm_op" value="page7.html">Page7</option>
+						</select>
+						<input class="hm_search hm_buttons" type="text" placeholder="Find out">
+						<select class="hm_buttons" onclick="hm_selecter(this)" id="hm_selecter">
+							<option value="">EN</option>
+							<option value="homePageFR.html">FR</option>
+						</select>
+					</nav>
+			</div>
+			<a id="one"></a>
+			<div class="hm_row2">
+				<div class="hm_parag" id="hm_para1">
+					<h1 class=".hm_header">About us</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="hm_parag" id="hm_para2">
+					<h1 class=".hm_header">Page 1</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="hm_parag" id="hm_para3">
+					<h1 class=".hm_header">Page 2</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div class="hm_row3">
+				<p class="hm_contact">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+				Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+				Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+				Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+				Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+				<a href="#one" class="hm_backtop hm_back">
+					<button type="button" class="hm_backtopbut hm_back"><p class="backtopp">Back to top</p></button>
+				</a>
+			</div>
+			<img class="hm_pics" id="hm_pic2" src="../images/nature1.png" alt="">
+			<script>
+				function homebutton(){
+					window.location.href = 'homePage.html';
+				}
+				function pages(selectElement){
+					let hmPages = selectElement.value;
+					if(hmPages) {
+						window.location.href = hmPages;
+					}
+				}
+				function hm_selecter(selectElement){
+					let hmLang = selectElement.value;
+					if(hmLang) {
+						window.location.href = hmLang;
+					}
+				}
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		</body>
+	</html>

@@ -1,0 +1,286 @@
+/* Alpsan Karademır */
+	/* HomePage */
+.hm_body{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#B0CE88;
+}
+.hm_row1{
+	width:50%;
+	margin-left:auto;
+	margin-top:1%;
+	margin-right:auto;
+	/* background-color:#4C763B; */
+	border:;
+	border-radius:75px;
+	position:sticky;
+	top:1%;
+}
+.hm_search{
+	text-align:left;
+	border-radius:25px;
+	padding-left:2%;
+	width:60%;
+	padding:1% 2% 1% 2%;
+	border:none;
+	background-color:#;
+}
+#hm_homepage:hover{
+	background-color:#F1F3E0;
+}
+.hm_buttons:hover{
+	background-color:#F1F3E0;
+}
+.hm_pages{
+	background-color:none;
+	border:none;
+	border-radius:25px;
+	appearance: none;
+	padding:1% 2% 1% 2%;
+	background-color:#;
+	
+	
+}
+.hm_pages:hover{
+	background-color:red;
+	background-color:#F1F3E0;
+}
+/* .hm_ophi{ */
+	/* size:100px; */
+}
+#hm_selecter{
+	margin-left:auto;
+	margin-right:3%;
+	float:right;
+	padding:1% 2% 1% 2%;
+	border-radius:25px;
+	appearance: none;
+	border:none;
+	background-color:#;
+}
+#hm_homepage{
+	margin-left:2%;
+	border-radius:25px;
+	padding:1% 2% 1% 2%;
+	border:none;
+	background-color:#;
+}
+.hm_op{
+	border:none;
+}
+.hm_buttons{
+	margin-bottom:3%;
+	margin-top:3%;
+	text-align:left;
+	appearance: none;
+	border:none;
+	background-color:#;
+	padding:1% 2% 1% 2%;
+	border-radius:25px;
+}
+#hm_pic1{
+	left:0%;
+	
+}
+#hm_pic2{
+	right:0%;
+}
+.hm_pics{
+	position:fixed;
+	top:0%;
+	width:10%;
+	height:100%;
+}
+.hm_row2{
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.hm_parag{
+	width:40%;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:10%;
+}
+.hm_header{
+	text-align:center;
+}
+#hm_para1{
+	margin-left:auto;
+	margin-right:auto;
+}
+#hm_para2{
+	float:left;
+}
+#hm_para3{
+	float:right;
+}
+.hm_backtop{
+	position:sticky;
+	bottom:5px;
+}
+.backtopp{
+	color:white;
+	margin:auto;
+}
+.hm_backtopbut{
+	background-color:black;
+	border:solid white;
+}
+.hm_row3{
+	margin-top:40%;
+	background-color:black;
+	padding-top:5%;
+	padding-bottom:5%;
+	padding-left:2%;
+	padding-right:2%;
+}
+.hm_contact{
+	color:white;
+	opacity:1;
+}
+.dropdown{
+	display:none;
+	/* position:sticky; */
+	/* top:0px; */
+	/* position:relative; */
+	/* top:0px; */
+	/* left:0px; */
+}
+
+/* Phones */
+
+@media only screen and (max-width: 600px){
+.hm_row1{
+	position:relative;
+	display:inline;
+}
+.hm_row3{
+	display:none;
+}
+.hm_parag{
+	width:100%;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:10%;
+}
+.hm_search{
+	position:absolute;
+	right:0px;
+}
+.hm_pageselect{
+	position:absolute;
+	top:35px;
+	left:3px;
+}
+.hm_nav{
+	display:none;
+}
+.dropdown{
+	display:block;
+}
+  
+}
+/* laptops */
+@media only screen and (min-width: 600px) and (max-width: 1025px)  {
+.hm_row1{
+	display:inline;
+	}
+.hm_row3{
+	margin-top:90%;
+	background-color:black;
+	padding-top:5%;
+	padding-bottom:5%;
+	padding-left:2%;
+	padding-right:2%;
+	}
+.hm_parag{
+	width:100%;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:10%;
+	}	
+.dropdown{
+	display:none;
+}
+}
+	/* page2 */
+.de_p{
+	float:right;
+	width:60%;
+	display:none;
+	transition:width 0.5s;
+}
+.de_p1{
+	padding-top:;
+}
+.de_r2r1{
+	display:;
+	margin-top:;
+}
+.de_img{
+	width:20%;
+	text-align:left;
+	margin-bottom:20%;
+	padding:0px;
+	margin-left:2%;
+	transition:width 1s;
+}
+.de_img:hover{
+	width:30%;
+}
+.de_img1{
+	margin-top:;
+}
+.de_img2{
+	padding
+}
+.de_img3{
+	
+}
+.de_row1{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	margin-bottom:20%;
+}
+.de_r2r1 .de_r2r2 .de_r2r3{
+	
+}
+.pg2_navbar{
+	padding-bottom:25%;
+	padding-top:2%;
+}
+/* Darius Joaquim Alvares */
+
+
+
+
+
+
+
+
+
+
+
+/* Demilade Banwo */
+
+/* Google Fonts */
+
+.playfair{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.amarante-regular{
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.julius-sans-one-regular{
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			
+			<!-- Meta Data -->
+			<meta charset="UTF-8">
+			<meta name="author" content="Alpsan Karademir">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="description">
+			<meta name="keywords" content="tags">
+			
+			<!-- Title -->
+			<title>Page 2</title>
+			
+			<!-- Bootstrap CSS -->
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+			
+			<!-- GoogleFonts -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+			
+			<!-- Your own CSS -->
+			<link rel="stylesheet" href="../style.css">
+			
+		</head>
+		
+		<body class="hm_body">
+			<a id="one"></a>
+			<img class="hm_pics" id="hm_pic1" src="../images/deers.png" alt="">
+			<div class="hm_row1">	
+					<nav class="hm_nav pg2_navbar">
+						<button type="button" class="hm_buttons" id="hm_homepage" onclick="homebutton()">Home</button>
+						<select class="hm_pages hm_pageselect" id="hm_pages" onchange="pages(this)">
+							<option class="hm_op" value="page2.html" disabled selected hidden>Page2</option>
+							<option class="hm_op" value="page3.html">Page3</option>
+							<option class="hm_op" value="page4.html">Page4</option>
+							<option class="hm_op" value="page5.html">Page5</option>
+							<option class="hm_op" value="page6.html">Page6</option>
+							<option class="hm_op" value="page7.html">Page7</option>
+						</select>
+						<input class="hm_search hm_buttons" type="text" placeholder="Find out">
+						<select class="hm_buttons" onclick="hm_selecter(this)" id="hm_selecter">
+							<option value="">EN</option>
+							<option value="homePageFR.html">FR</option>
+						</select>
+					</nav>
+			</div>
+			<div class="de_row2">
+				<div class="de_r2r1">
+					<img class="de_img de_img1" onmouseover="img1()" onmouseout="img1out()" src="../images/tree.avif" alt="">
+					<p class="container de_p de_p1" id="de_p1"></p>
+				</div>
+				<div class="de_r2r2" >
+					<img class="container de_img de_img2" onmouseover="img2()" onmouseout="img2out()" src="../images/tree.avif" alt="">
+					<p class="de_p" id="de_p2"></p>
+				</div>
+				<div class="de_r2r3">
+					<img class="container de_img de_img3" onmouseover="img3()"onmouseout="img3out()" src="../images/tree.avif" alt="">
+					<p class="de_p" id="de_p3"></p>
+				</div>
+			</div>
+			<div class="de_row3">
+				<a href="#one" class="hm_backtop hm_back">
+					<button type="button" class="hm_backtopbut hm_back"><p class="backtopp">Back to top</p></button>
+				</a>
+			</div>
+			<img class="hm_pics" id="hm_pic2" src="../images/nature1.png" alt="">
+			
+			<script>
+				function img1(){
+				document.getElementById("de_p1").style.display = "block";
+					document.getElementById("de_p1").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+				}
+				function img1out(){
+					document.getElementById("de_p1").style.display = "none";
+				}
+				function img2(){
+				document.getElementById("de_p2").style.display = "block";
+					document.getElementById("de_p2").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+				}
+				function img2out(){
+					document.getElementById("de_p2").style.display = "none";
+				}
+				function img3(){
+				document.getElementById("de_p3").style.display = "block";
+					document.getElementById("de_p3").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+				}
+				function img3out(){
+					document.getElementById("de_p3").style.display = "none";
+				}
+				function homebutton(){
+					window.location.href = 'homePage.html';
+				}
+				function pages(selectElement){
+					let hmPages = selectElement.value;
+					if(hmPages) {
+						window.location.href = hmPages;
+					}
+				}
+				function hm_selecter(selectElement){
+					let hmLang = selectElement.value;
+					if(hmLang) {
+						window.location.href = hmLang;
+					}
+				}
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		</body>
+	</html>
