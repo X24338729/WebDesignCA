@@ -25,8 +25,8 @@
 			
 		</head>
 		
-		<body class="hm_body">
-			<div class="hm_row1">
+		<body class="pg7_body">
+			<div class="pg7_row1nav">
 				<div class="dropdown">
 					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Menu
@@ -41,7 +41,7 @@
 						<li><a class="dropdown-item" href="#">page6</a></li>
 					</ul>
 				</div>
-					<nav class="hm_nav">
+					<nav class="hm_nav pg7_nav">
 						<button type="button" class="hm_buttons" id="hm_homepage" onclick="homebutton()">Home</button>
 						<select class="hm_pages hm_pageselect" id="hm_pages" onchange="pages(this)">
 							<option class="hm_op" value="page7.html" disabled selected hidden>Page7</option>
@@ -58,76 +58,107 @@
 						</select>
 					</nav>
 			</div>
-			<div class="row">
+			<div class="row pg7_row1">
 				<div class="col">
 				
 				</div>
 				<div class="col">
 				
 				</div>
-				<div class="col pg7_row3">
+				<div class="col pg7_col3">
 					<div class="donate_box container donateDiv">
-						<div class="btn-group donateButtons" role="group" aria-label="Basic example">
-							<button type="button" class="btn btn-primary" onclick="oneOff()">One-off donation</button>
-							<button type="button" class="btn btn-primary" onclick="montSub()">Monthly donation</button>
+						<div class="btn-group donateButtons" role="group" aria-label="Basic radio toggle button group">
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+							<label class="btn btn-outline-secondary pg7_labels" for="btnradio1" onclick="oneOff()">One-off donation</label>
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+							<label class="btn btn-outline-secondary pg7_labels" for="btnradio2" onclick="montSub()">Monthly donation</label>
 						</div>
 						<p class="donateText">Amount to give</p>
 						<div class="oneOffCheck donateC" id="oneOffCheck">
-							<div class="form-check checkB" id="labelId1">
-								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-								<label class="form-check-label" for="radioDefault1" onclick="donateLabel1()">20 €</label>
+							<div class="form-check checkB" id="labelId1" onclick="donateLabel1()">
+								<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault1">
+								<label class="form-check-label pg7_formLabel" for="radioDefault1">20€</label>
 							</div>
-							<div class="form-check checkB" id="labelId2">
-								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
-								<label class="form-check-label" for="radioDefault2" onclick="donateLabel2()">100€</label>
+							<div class="form-check checkB" id="labelId2" onclick="donateLabel2()">
+								<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault2">
+								<label class="form-check-label pg7_formLabel" for="radioDefault2">100€</label>
 							</div>
-							<div class="form-check checkB" id="labelId3">
-								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3" checked>
-								<label class="form-check-label" for="radioDefault3" onclick="donateLabel3()">500€</label>
+							<div class="form-check checkB" id="labelId3" onclick="donateLabel3()">
+								<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault3">
+								<label class="form-check-label pg7_formLabel" for="radioDefault3">500€</label>
 							</div>
 						</div>
 						<div class="monSubCheck donateC" id="monSubCheck">
-							<div class="form-check checkB" id="labelId4">
-								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4">
-								<label class="form-check-label" for="radioDefault4" onclick="donateLabel4()">10€</label>
+							<div class="form-check checkB" id="labelId4" onclick="donateLabel4()">
+								<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault4">
+								<label class="form-check-label pg7_formLabel" for="radioDefault4">10€  Min 6 months</label>
 							</div>
-							<div class="form-check checkB" id="labelId5">
-								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault5" checked>
-								<label class="form-check-label" for="radioDefault5" onclick="donateLabel5()">25€</label>
+							<div class="form-check checkB" id="labelId5" onclick="donateLabel5()">
+								<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault5" >
+								<label class="form-check-label pg7_formLabel" for="radioDefault5">50€  Min 6 months</label>
 							</div>
-							<div class="form-check checkB" id="labelId6">
-								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault6" checked>
-								<label class="form-check-label" for="radioDefault6" onclick="donateLabel6()">50€</label>
+							<div class="form-check checkB" id="labelId6" onclick="donateLabel6()">
+								<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault6" >
+								<label class="form-check-label pg7_formLabel" for="radioDefault6">250€  Min 6 months</label>
 							</div>
 						</div>
-						<button type="submit" class="btn btn-primary donateButtons1" onclick="donateLink()">Donate</button>
+						<button type="submit" class="btn btn-primary donateButtons1 donateButtons" id="donateSendBut" onclick="donateLink()" disabled>Donate</button>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-			
+			<div class="row pg7_row3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 			<script>
+				let pg7LabelsCheck = document.getElementById("labelId1");
+				pg7LabelsCheck.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				let pg7LabelsCheck1 = document.getElementById("labelId2");
+				pg7LabelsCheck1.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				let pg7LabelsCheck2 = document.getElementById("labelId3");
+				pg7LabelsCheck2.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				let pg7LabelsCheck3 = document.getElementById("labelId4");
+				pg7LabelsCheck3.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				let pg7LabelsCheck4 = document.getElementById("labelId5");
+				pg7LabelsCheck4.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				let pg7LabelsCheck5 = document.getElementById("labelId6");
+				pg7LabelsCheck5.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
 				function donateLink(){
 					window.location.href = "444"
-				}
+				};
 				function oneOff(){
 					document.getElementById("oneOffCheck").style.display = "inline";
 					document.getElementById("monSubCheck").style.display = "none";
-				}
+					document.getElementById("donateSendBut").disabled = true;
+				};
 				function montSub(){
 					document.getElementById("oneOffCheck").style.display = "none ";
 					document.getElementById("monSubCheck").style.display = "block ";
-				}
+					document.getElementById("donateSendBut").disabled = true;
+				};
 				function homebutton(){
 					window.location.href = 'homePage.html';
-				}
+				};
 				function pages(selectElement){
 					let hmPages = selectElement.value;
 					if(hmPages) {
 						window.location.href = hmPages;
 					}
-				}
+				};
 				function donateLabel1(){
 					document.getElementById("labelId1").style.backgroundColor = "#8CE4FF";
 					document.getElementById("labelId2").style.backgroundColor = "#AAC4F5";
@@ -135,7 +166,7 @@
 					document.getElementById("labelId4").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId5").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId6").style.backgroundColor = "#AAC4F5";
-				}
+				};
 				function donateLabel2(){
 					document.getElementById("labelId1").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId2").style.backgroundColor = "#8CE4FF";
@@ -143,7 +174,7 @@
 					document.getElementById("labelId4").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId5").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId6").style.backgroundColor = "#AAC4F5";
-				}
+				};
 				function donateLabel3(){
 					document.getElementById("labelId1").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId2").style.backgroundColor = "#AAC4F5";
@@ -151,7 +182,7 @@
 					document.getElementById("labelId4").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId5").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId6").style.backgroundColor = "#AAC4F5";
-				}
+				};
 				function donateLabel4(){
 					document.getElementById("labelId4").style.backgroundColor = "#8CE4FF";
 					document.getElementById("labelId5").style.backgroundColor = "#AAC4F5";
@@ -159,7 +190,7 @@
 					document.getElementById("labelId1").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId2").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId3").style.backgroundColor = "#AAC4F5";
-				}
+				};
 				function donateLabel5(){
 					document.getElementById("labelId4").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId5").style.backgroundColor = "#8CE4FF";
@@ -167,7 +198,7 @@
 					document.getElementById("labelId1").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId2").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId3").style.backgroundColor = "#AAC4F5";
-				}
+				};
 				function donateLabel6(){
 					document.getElementById("labelId4").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId5").style.backgroundColor = "#AAC4F5";
@@ -175,13 +206,13 @@
 					document.getElementById("labelId1").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId2").style.backgroundColor = "#AAC4F5";
 					document.getElementById("labelId3").style.backgroundColor = "#AAC4F5";
-				}
+				};
 				function hm_selecter(selectElement){
 					let hmLang = selectElement.value;
 					if(hmLang) {
 						window.location.href = hmLang;
 					}
-				}
+				};
 			</script>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 		</body>

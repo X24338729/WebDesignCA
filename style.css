@@ -262,19 +262,21 @@
 	text-align:center;
 }
 .donateButtons{
-	margin-right:auto;
-	margin-left:auto;
+	display: flex;
+	justify-content: center;
 }
 .donateButtons1{
 	margin-right:auto;
 	margin-left:auto;
 }
-
 .monSubCheck{
 	display:none;
 }
 .donateDiv{
 	background-color:#8CA9FF;
+}
+.pg7_labels{
+	color:black;
 }
 .checkB{
 	overflow: hidden;
@@ -292,21 +294,67 @@
 	padding-top:10%;
 	padding-bottom:10%;
 }
-.pg7_row3{
+.pg7_col3{
 	margin-top:5%;
+	margin-bottom:5%;
 	margin-left:auto;
 	margin-right:auto;
 }
+.pg7_row1{
+	/* margin-top:5%; */
+	background-image:url('./images/panda.png');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.pg7_body{
+	/* width:80%; */
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FE6244;
+}
+.pg7_row1nav{
+	/* width:50%; */
+	margin-left:0%;
+	/* margin-top:1%; */
+	margin-right:auto;
+	/* background-color:#4C763B; */
+	border:;
+	/* border-radius:75px; */
+	background-color:#778873;
+}
+.pg7_nav{
+	padding-left:10%;	
+	padding-right:auto;
+}
+.pg7_row3{
+	background-color:#D2DCB6;
+	margin:auto;
+}
+.pg7_form{
+	opacity:0;
+}
+.pg7_formLabel{
+	font-size:150%;
+}
+
+
+
+
+
 
 
 /* Darius Joaquim Alvares */
 #pg_3{
 	/* background:linear-gradient(to bottom, #fffadc,#b5f500,#a4de00,#98cd00); */
-	margin:-10px 50px 0px 50px;
+	margin:0px 50px 0px 50px;
+	border-radius:50px;
+	border:solid 5px red;
 }
 #pg_4{
 	/* background:linear-gradient(to bottom, #fffadc,#b5f500,#a4de00,#98cd00); */
-	margin:-10px 50px 0px 50px;
+	margin:0px 50px 0px 50px;
+	border-radius:50px;
+	border:solid 5px green;
 }
 
 
