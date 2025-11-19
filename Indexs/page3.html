@@ -4,10 +4,13 @@
 			
 			<!-- Meta Data -->
 			<meta charset="UTF-8">
-			<meta name="author" content="Name">
+			<meta name="author" content="Darius Joaquim Alvares">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta name="description" content="description">
 			<meta name="keywords" content="tags">
+			
+			<!-- Javascript -->
+			<link rel="text/javascript" defer src="script.js">
 			
 			<!-- Title -->
 			<title>Page 3</title>
@@ -25,116 +28,244 @@
 			
 		</head>
 		
-		<body class="fs_body">
-			<div class="hm_row1">
-				<div class="dropdown">
-					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Menu
-					</a>
+		<body>
+			<div id="pg_3">
+				<a id="one"></a>
+					<div class="hm_row1">
+						<div class="dropdown">
+							<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Menu
+							</a>
 
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Page1</a></li>
-						<li><a class="dropdown-item" href="#">Page2</a></li>
-						<li><a class="dropdown-item" href="#">Page3</a></li>
-						<li><a class="dropdown-item" href="#">page4</a></li>
-						<li><a class="dropdown-item" href="#">page5</a></li>
-						<li><a class="dropdown-item" href="#">page6</a></li>
-					</ul>
-				</div>
-					<nav class="hm_nav">
-						<button type="button" class="hm_buttons" id="hm_homepage" onclick="homebutton()">Home</button>
-							<select class="hm_pages hm_pageselect" id="hm_pages" onchange="pages(this)">
-							<option class="hm_op" value="page3.html" disabled selected hidden>Page3</option>
-							<option class="hm_op" value="page2.html">Page2</option>
-							<option class="hm_op" value="page4.html">Page4</option>
-							<option class="hm_op" value="page5.html">Page5</option>
-							<option class="hm_op" value="page6.html">Page6</option>
-							<option class="hm_op" value="page7.html">Page7</option>
-						</select>
-						<input class="hm_search hm_buttons" type="text" placeholder="Find out">
-						<select class="hm_buttons" onclick="hm_selecter(this)" id="hm_selecter">
-							<option value="">EN</option>
-							<option value="homePageFR.html">FR</option>
-						</select>
-					</nav>
-			</div>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Page1</a></li>
+								<li><a class="dropdown-item" href="#">Page2</a></li>
+								<li><a class="dropdown-item" href="#">Page3</a></li>
+								<li><a class="dropdown-item" href="#">page4</a></li>
+								<li><a class="dropdown-item" href="#">page5</a></li>
+								<li><a class="dropdown-item" href="#">page6</a></li>
+							</ul>
+						</div>
+							<nav class="hm_nav">
+								<button type="button" class="hm_buttons" id="hm_homepage" onclick="homebutton()">Home</button>
+									<select class="hm_pages hm_pageselect" id="hm_pages" onchange="pages(this)">
+									<option class="hm_op" value="page3.html" disabled selected hidden>Page3</option>
+									<option class="hm_op" value="page2.html">Page2</option>
+									<option class="hm_op" value="page4.html">Page4</option>
+									<option class="hm_op" value="page5.html">Page5</option>
+									<option class="hm_op" value="page6.html">Page6</option>
+									<option class="hm_op" value="page7.html">Page7</option>
+								</select>
+								<input class="hm_search hm_buttons" type="text" placeholder="Find out">
+								<select class="hm_buttons" onclick="hm_selecter(this)" id="hm_selecter">
+									<option value="">EN</option>
+									<option value="homePageFR.html">FR</option>
+								</select>
+							</nav>
+					</div>
+				
+					<div class="container p-4">
+						<div class="row gx-4">
+							<div class="col-4 col-md-4">
+							  <h1 class="amarante-regular">Header</h1>
+							</div>
+							<div class="col-4 col-md-4 offset-md-4">
+							  Hero Banner
+							</div>
+						</div>
+					</div>
+				<section>	
+					<div class="container p-4">
+						<div class="row gx-4">
+							<div class="col-4 col-md-4">
+							  <h2 class="amarante-regular">SubGoal</h2>
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row g-4">
+							<div class="col-12 col-md-12 playfair">
+							  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row gx-4">
+							<div class="col-2 col-md-2">
+								<img class="img-fluid order-5" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2 order-2">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2 order-3">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row g-4">
+							<div class="col-3 col-md-3">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-9 col-md-9 playfair">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row g-4">
+							<div class="col playfair">
+							  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</div>
+						</div>
+					</div>
+				</section>	
+				
+				<section>	
+					<div class="container p-4">
+						<div class="row gx-4">
+							<div class="col-4 col-md-4">
+							  <h2 class="amarante-regular">SubGoal</h2>
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row g-4">
+							<div class="col-12 col-md-12 playfair">
+							  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row gx-4">
+							<div class="col-2 col-md-2">
+								<img class="img-fluid order-5" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2 order-2">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2 order-3">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row g-4">
+							<div class="col-3 col-md-3">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-9 col-md-9 playfair">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row g-4">
+							<div class="col playfair">
+							  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section>	
+					<div class="container p-4">
+						<div class="row gx-4">
+							<div class="col-4 col-md-4">
+							  <h2 class="amarante-regular">SubGoal</h2>
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row g-4">
+							<div class="col-12 col-md-12 playfair">
+							  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row gx-4">
+							<div class="col-2 col-md-2">
+								<img class="img-fluid order-5" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2 order-2">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2 order-3">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-2 col-md-2">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row g-4">
+							<div class="col-3 col-md-3">
+								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							</div>
+							<div class="col-9 col-md-9 playfair">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</div>
+						</div>
+					</div>
+					
+					<div class="container p-4">
+						<div class="row g-4">
+							<div class="col playfair">
+							  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</div>
+						</div>
+						<a href="#one" class="hm_backtop hm_back">
+						<button type="button" class="hm_backtopbut hm_back"><p class="backtopp">Back to top</p></button>
+						</a>
+					</div>
+				</section>
+			</div>	
+					<script>
+						function homebutton(){
+							window.location.href = 'homePage.html';
+						}
+						function pages(selectElement){
+							let hmPages = selectElement.value;
+							if(hmPages) {
+								window.location.href = hmPages;
+							}
+						}
+						function hm_selecter(selectElement){
+							let hmLang = selectElement.value;
+							if(hmLang) {
+								window.location.href = hmLang;
+							}
+						}
+					</script>
+					<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 			
-			<div class="container">
-				<div class="row g-4">
-					<div class="col-4 col-md-4">
-					  <h1>Header</h1>
-					</div>
-					<div class="col-4 col-md-4">
-					  
-					</div>
-					<div class="col-4 col-md-4">
-					  Hero Banner
-					</div>
-				</div>
-			</div>
-			
-			<div class="container">
-				<div class="row g-4">
-					<div class="col-12 col-md-12">
-					  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-					</div>
-				</div>
-			</div>
-			
-			<div class="container">
-				<div class="row g-4">
-					<div class="col-2 col-md-2">
-						<img class="img-fluid" src="https://placeholder.pics/svg/300">
-					</div>
-					<div class="col-2 col-md-2">
-						<img class="img-fluid" src="https://placeholder.pics/svg/300">
-					</div>
-					<div class="col-2 col-md-2">
-						<img class="img-fluid" src="https://placeholder.pics/svg/300">
-					</div>
-					<div class="col-2 col-md-2">
-						<img class="img-fluid" src="https://placeholder.pics/svg/300">
-					</div>
-					<div class="col-2 col-md-2">
-						<img class="img-fluid" src="https://placeholder.pics/svg/300">
-					</div>
-				</div>
-			</div>
-			
-			<div class="container">
-				<div class="row g-4">
-					<div class="col-3 col-md-3">
-						<img class="img-fluid" src="https://placeholder.pics/svg/300">
-					</div>
-					<div class="col-9 col-md-9">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-					</div>
-				</div>
-			</div>
-			
-			<div class="container">
-				<div class="row g-4">
-					<div class="col">
-					  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-					</div>
-			</div>
-			
-			<script>
-				function homebutton(){
-					window.location.href = 'homePage.html';
-				}
-				function pages(selectElement){
-					let hmPages = selectElement.value;
-					if(hmPages) {
-						window.location.href = hmPages;
-					}
-				}
-				function hm_selecter(selectElement){
-					let hmLang = selectElement.value;
-					if(hmLang) {
-						window.location.href = hmLang;
-					}
-				}
-			</script>
 		</body>
 	</html>

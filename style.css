@@ -91,6 +91,7 @@
 	top:0%;
 	width:10%;
 	height:100%;
+	z-index:-1;
 }
 .hm_row2{
 	width:70%;
@@ -252,9 +253,61 @@
 	padding-bottom:25%;
 	padding-top:2%;
 }
+
+
+/* Page7 */
+
+.donateText{
+	font-size:200%;
+	text-align:center;
+}
+.donateButtons{
+	margin-right:auto;
+	margin-left:auto;
+}
+.donateButtons1{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.monSubCheck{
+	display:none;
+}
+.donateDiv{
+	background-color:#8CA9FF;
+}
+.checkB{
+	overflow: hidden;
+	border-radius:30px;
+	background-color:#AAC4F5;
+	margin-bottom:2%;
+	margin-top:2%;
+	padding-bottom:10%;
+	padding-top:10%;
+	padding-left:15%;
+}
+.donateDiv{
+	overflow: hidden;
+	border-radius:30px;
+	padding-top:10%;
+	padding-bottom:10%;
+}
+.pg7_row3{
+	margin-top:5%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
 /* Darius Joaquim Alvares */
-
-
+#pg_3{
+	/* background:linear-gradient(to bottom, #fffadc,#b5f500,#a4de00,#98cd00); */
+	margin:-10px 50px 0px 50px;
+}
+#pg_4{
+	/* background:linear-gradient(to bottom, #fffadc,#b5f500,#a4de00,#98cd00); */
+	margin:-10px 50px 0px 50px;
+}
 
 
 
@@ -265,6 +318,11 @@
 
 
 /* Demilade Banwo */
+
+
+
+
+
 
 /* Google Fonts */
 
@@ -278,6 +336,7 @@
   font-family: "Amarante", serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration-line: underline;
 }
 .julius-sans-one-regular{
   font-family: "Julius Sans One", sans-serif;

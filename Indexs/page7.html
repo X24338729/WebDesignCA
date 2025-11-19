@@ -58,14 +58,67 @@
 						</select>
 					</nav>
 			</div>
-			<div class="p7_row2">
-
+			<div class="row">
+				<div class="col">
+				
+				</div>
+				<div class="col">
+				
+				</div>
+				<div class="col pg7_row3">
+					<div class="donate_box container donateDiv">
+						<div class="btn-group donateButtons" role="group" aria-label="Basic example">
+							<button type="button" class="btn btn-primary" onclick="oneOff()">One-off donation</button>
+							<button type="button" class="btn btn-primary" onclick="montSub()">Monthly donation</button>
+						</div>
+						<p class="donateText">Amount to give</p>
+						<div class="oneOffCheck donateC" id="oneOffCheck">
+							<div class="form-check checkB" id="labelId1">
+								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+								<label class="form-check-label" for="radioDefault1" onclick="donateLabel1()">20 €</label>
+							</div>
+							<div class="form-check checkB" id="labelId2">
+								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+								<label class="form-check-label" for="radioDefault2" onclick="donateLabel2()">100€</label>
+							</div>
+							<div class="form-check checkB" id="labelId3">
+								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3" checked>
+								<label class="form-check-label" for="radioDefault3" onclick="donateLabel3()">500€</label>
+							</div>
+						</div>
+						<div class="monSubCheck donateC" id="monSubCheck">
+							<div class="form-check checkB" id="labelId4">
+								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4">
+								<label class="form-check-label" for="radioDefault4" onclick="donateLabel4()">10€</label>
+							</div>
+							<div class="form-check checkB" id="labelId5">
+								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault5" checked>
+								<label class="form-check-label" for="radioDefault5" onclick="donateLabel5()">25€</label>
+							</div>
+							<div class="form-check checkB" id="labelId6">
+								<input class="form-check-input" type="radio" name="radioDefault" id="radioDefault6" checked>
+								<label class="form-check-label" for="radioDefault6" onclick="donateLabel6()">50€</label>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary donateButtons1" onclick="donateLink()">Donate</button>
+					</div>
 				</div>
 			</div>
-			<div class="p7_row3">
-
+			<div class="row">
+			
 			</div>
 			<script>
+				function donateLink(){
+					window.location.href = "444"
+				}
+				function oneOff(){
+					document.getElementById("oneOffCheck").style.display = "inline";
+					document.getElementById("monSubCheck").style.display = "none";
+				}
+				function montSub(){
+					document.getElementById("oneOffCheck").style.display = "none ";
+					document.getElementById("monSubCheck").style.display = "block ";
+				}
 				function homebutton(){
 					window.location.href = 'homePage.html';
 				}
@@ -74,6 +127,54 @@
 					if(hmPages) {
 						window.location.href = hmPages;
 					}
+				}
+				function donateLabel1(){
+					document.getElementById("labelId1").style.backgroundColor = "#8CE4FF";
+					document.getElementById("labelId2").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId3").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId4").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId5").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId6").style.backgroundColor = "#AAC4F5";
+				}
+				function donateLabel2(){
+					document.getElementById("labelId1").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId2").style.backgroundColor = "#8CE4FF";
+					document.getElementById("labelId3").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId4").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId5").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId6").style.backgroundColor = "#AAC4F5";
+				}
+				function donateLabel3(){
+					document.getElementById("labelId1").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId2").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId3").style.backgroundColor = "#8CE4FF";
+					document.getElementById("labelId4").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId5").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId6").style.backgroundColor = "#AAC4F5";
+				}
+				function donateLabel4(){
+					document.getElementById("labelId4").style.backgroundColor = "#8CE4FF";
+					document.getElementById("labelId5").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId6").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId1").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId2").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId3").style.backgroundColor = "#AAC4F5";
+				}
+				function donateLabel5(){
+					document.getElementById("labelId4").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId5").style.backgroundColor = "#8CE4FF";
+					document.getElementById("labelId6").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId1").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId2").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId3").style.backgroundColor = "#AAC4F5";
+				}
+				function donateLabel6(){
+					document.getElementById("labelId4").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId5").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId6").style.backgroundColor = "#8CE4FF";
+					document.getElementById("labelId1").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId2").style.backgroundColor = "#AAC4F5";
+					document.getElementById("labelId3").style.backgroundColor = "#AAC4F5";
 				}
 				function hm_selecter(selectElement){
 					let hmLang = selectElement.value;
