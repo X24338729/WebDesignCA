@@ -207,6 +207,13 @@
 }
 }
 	/* page2 */
+	
+.de_body{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#C6D870;
+}
 .de_p{
 	float:right;
 	width:60%;
@@ -217,25 +224,36 @@
 	padding-top:;
 }
 .de_r2r1{
+	overflow: hidden;
+	border-radius:30px;
+}
+.de_r2r2{
+	overflow: hidden;
+	border-radius:30px;
+}
+.de_r2r3{
 	display:;
 	margin-top:;
+	overflow: hidden;
+	border-radius:30px;
 }
 .de_img{
 	width:20%;
 	text-align:left;
-	margin-bottom:20%;
 	padding:0px;
-	margin-left:2%;
+	margin-left:;
 	transition:width 1s;
+	border-radius:30px;
 }
 .de_img:hover{
 	width:30%;
+	margin-left:0px;
 }
 .de_img1{
 	margin-top:;
 }
 .de_img2{
-	padding
+	padding:;
 }
 .de_img3{
 	
@@ -246,7 +264,16 @@
 	text-align:center;
 	margin-bottom:20%;
 }
-.de_r2r1 .de_r2r2 .de_r2r3{
+.de_r2r1:hover{
+	
+}
+.de_r2r1 {
+	height:auto;
+}
+.de_r2r2 {
+	
+}
+.de_r2r3{
 	
 }
 .pg2_navbar{
@@ -344,17 +371,53 @@
 
 
 /* Darius Joaquim Alvares */
+/* Page 3 */
+#body_3{
+	
+}
 #pg_3{
 	/* background:linear-gradient(to bottom, #fffadc,#b5f500,#a4de00,#98cd00); */
 	margin:0px 50px 0px 50px;
 	border-radius:50px;
-	border:solid 5px red;
+	border:solid 10px brown;
+}
+.sec_1{
+	background-image:linear-gradient(to bottom,#b77366 ,#ffe1af,#e2b49a,#9c7963);
+	border-radius:50px;
+	border-top:solid 5px green;
+	border-bottom:solid 5px green;
+}
+.sec_2{
+	border-radius:50px;
+	border-top:solid 5px green;
+	border-bottom:solid 5px green;
+}
+.sec_3{
+	border-radius:50px;
+	border-top:solid 5px green;
+	border-bottom:solid 5px green;
+}
+/* Page 4 */
+#body_4{
+	
 }
 #pg_4{
 	/* background:linear-gradient(to bottom, #fffadc,#b5f500,#a4de00,#98cd00); */
 	margin:0px 50px 0px 50px;
 	border-radius:50px;
 	border:solid 5px green;
+}
+.sec_4{
+	
+	border-radius:50px;
+	border-top:solid 5px green;
+	border-bottom:solid 5px green;
+}
+.sec_5{
+	background-image:linear-gradient(to bottom,#e5fadb ,#a0d8b3,#a2a379,#83754e);
+	border-radius:50px;
+	border-top:solid 5px green;
+	border-bottom:solid 5px green;
 }
 
 
@@ -377,7 +440,7 @@
 .playfair{
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 .amarante-regular{

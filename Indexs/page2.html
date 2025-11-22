@@ -25,7 +25,7 @@
 			
 		</head>
 		
-		<body class="hm_body">
+		<body class="de_body">
 			<a id="one"></a>
 			<img class="hm_pics" id="hm_pic1" src="../images/deers.png" alt="">
 			<div class="hm_row1">	
@@ -47,15 +47,17 @@
 					</nav>
 			</div>
 			<div class="de_row2">
-				<div class="de_r2r1">
+				<div class="de_r2r1" id="de_r2r1">
 					<img class="de_img de_img1" onmouseover="img1()" onmouseout="img1out()" src="../images/tree.avif" alt="">
 					<p class="container de_p de_p1" id="de_p1"></p>
 				</div>
-				<div class="de_r2r2" >
+				<br>
+				<div class="de_r2r2" id="de_r2r2">
 					<img class="container de_img de_img2" onmouseover="img2()" onmouseout="img2out()" src="../images/tree.avif" alt="">
 					<p class="de_p" id="de_p2"></p>
 				</div>
-				<div class="de_r2r3">
+				<br>
+				<div class="de_r2r3" id="de_r2r3">
 					<img class="container de_img de_img3" onmouseover="img3()"onmouseout="img3out()" src="../images/tree.avif" alt="">
 					<p class="de_p" id="de_p3"></p>
 				</div>
@@ -71,23 +73,29 @@
 				function img1(){
 				document.getElementById("de_p1").style.display = "block";
 					document.getElementById("de_p1").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+					document.getElementById("de_r2r1").style.backgroundColor = "#8FA31E"
 				}
 				function img1out(){
 					document.getElementById("de_p1").style.display = "none";
+					document.getElementById("de_r2r1").style.backgroundColor = "#C6D870"
 				}
 				function img2(){
 				document.getElementById("de_p2").style.display = "block";
 					document.getElementById("de_p2").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+					document.getElementById("de_r2r2").style.backgroundColor = "#8FA31E"
 				}
 				function img2out(){
 					document.getElementById("de_p2").style.display = "none";
+					document.getElementById("de_r2r2").style.backgroundColor = "#C6D870"
 				}
 				function img3(){
 				document.getElementById("de_p3").style.display = "block";
 					document.getElementById("de_p3").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+					document.getElementById("de_r2r3").style.backgroundColor = "#8FA31E"
 				}
 				function img3out(){
 					document.getElementById("de_p3").style.display = "none";
+					document.getElementById("de_r2r3").style.backgroundColor = "#C6D870"
 				}
 				function homebutton(){
 					window.location.href = 'homePage.html';
