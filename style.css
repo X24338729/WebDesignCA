@@ -46,6 +46,33 @@
 	background-color:red;
 	background-color:#F1F3E0;
 }
+.homeImageRow{
+	position: relative;
+	background-image:url(./Images/hmBack.png);
+	height:500px;
+	background-repeat:no-repeat;
+	background-size:cover; 
+	background-position: center top;
+	height: 70vh;
+	
+}
+/* .buttonBackground{ */
+    /* background: linear-gradient( */
+        /* to right, */
+        /* #004d40 0%, */
+        /* #b08f4c 50%, */
+        /* #1c1c1c 100% */
+    /* ); */
+/* } */
+.hmPage_Body{
+	background: linear-gradient(
+        to right,
+        #004d40 0%,
+        #b08f4c 50%,
+        #1c1c1c 100%
+    );
+}
+
 /* .hm_ophi{ */
 	/* size:100px; */
 }
@@ -104,6 +131,9 @@
 	margin-right:2%;
 	margin-top:10%;
 }
+.langOption{
+	display:none;
+}
 .hm_header{
 	text-align:center;
 }
@@ -148,6 +178,12 @@
 	/* position:relative; */
 	/* top:0px; */
 	/* left:0px; */
+}
+.bg-brown {
+	background-color:#5C4033;
+}
+.img-thumbnail{
+	float:left;
 }
 
 /* Phones */
@@ -214,6 +250,15 @@
 	margin-right:auto;
 	background-color:#C6D870;
 }
+.navPg2{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+}
+.bannerPg2{
+	margin-top:8%;
+}
 .de_p{
 	float:right;
 	width:60%;
@@ -273,7 +318,7 @@
 .de_r2r2 {
 	
 }
-.de_r2r3{
+.de_row2, .de_row3{
 	
 }
 .pg2_navbar{
@@ -304,6 +349,9 @@
 }
 .pg7_labels{
 	color:black;
+}
+.pg7Ban{
+	margin-top:8%;
 }
 .checkB{
 	overflow: hidden;
@@ -372,50 +420,54 @@
 
 /* Darius Joaquim Alvares */
 /* Page 3 */
-#body_3{
-	
-}
-#pg_3{
-	/* background:linear-gradient(to bottom, #fffadc,#b5f500,#a4de00,#98cd00); */
-	margin:0px 50px 0px 50px;
-	border-radius:50px;
-	border:solid 10px brown;
-}
+
+
 .sec_1{
-	background-image:linear-gradient(to bottom,#b77366 ,#ffe1af,#e2b49a,#9c7963);
-	border-radius:50px;
+	background-image:linear-gradient(to bottom,#b77366 ,#ffe1af);
+	background-color:rgba(0,0,0,1);
+	
 	border-top:solid 5px green;
 	border-bottom:solid 5px green;
 }
 .sec_2{
-	border-radius:50px;
+	background-image:linear-gradient(to bottom,#ffe1af,#e2b49a);
+	
 	border-top:solid 5px green;
 	border-bottom:solid 5px green;
 }
 .sec_3{
-	border-radius:50px;
+	background-image:linear-gradient(to bottom,#e2b49a ,#9c7963);
+	
 	border-top:solid 5px green;
 	border-bottom:solid 5px green;
 }
+.hero-banner {
+    height: 60vh; /* adjust to 50–80vh if needed */
+    background: url('images/forest.jpg') center/cover no-repeat;
+  }
+
+.hero-banner .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* dark overlay so text is visible */
+  }
+
+.hero-banner .container {
+    position: relative;
+    z-index: 2;
+  }
 /* Page 4 */
-#body_4{
-	
-}
-#pg_4{
-	/* background:linear-gradient(to bottom, #fffadc,#b5f500,#a4de00,#98cd00); */
-	margin:0px 50px 0px 50px;
-	border-radius:50px;
-	border:solid 5px green;
-}
+
+
 .sec_4{
+	background-image:linear-gradient(to bottom,#e5fadb ,#a0d8b3,#a2a379);
 	
-	border-radius:50px;
 	border-top:solid 5px green;
 	border-bottom:solid 5px green;
 }
 .sec_5{
-	background-image:linear-gradient(to bottom,#e5fadb ,#a0d8b3,#a2a379,#83754e);
-	border-radius:50px;
+	background-image:linear-gradient(to bottom,#a0d8b3,#a2a379,#83754e);
+	
 	border-top:solid 5px green;
 	border-bottom:solid 5px green;
 }

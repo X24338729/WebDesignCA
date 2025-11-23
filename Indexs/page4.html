@@ -31,48 +31,57 @@
 		<body id="body_4">
 			<div id="pg_4">
 				<a id="one"></a>
-					<div class="hm_row1">
-						<div class="dropdown">
-							<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Menu
-							</a>
-
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Page1</a></li>
-								<li><a class="dropdown-item" href="#">Page2</a></li>
-								<li><a class="dropdown-item" href="#">Page3</a></li>
-								<li><a class="dropdown-item" href="#">page4</a></li>
-								<li><a class="dropdown-item" href="#">page5</a></li>
-								<li><a class="dropdown-item" href="#">page6</a></li>
-							</ul>
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">Page4</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">			
+								<form class="d-flex mx-auto my-2 my-lg-0" role="group">
+									<input class="form-control me-2" type="text" placeholder="Find Out...">
+									<button class="btn btn-outline-info" type="submit">Search</button> 
+								</form>	
+								<ul class="navbar-nav ms-auto">
+									<li class="nav-item">
+										<a class="nav-link" href="homePage.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page2.html">Page2</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page3.html">Page3</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page5.html">Page5</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page6.html">Page6</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page7.html">Page7</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-							<nav class="hm_nav">
-								<button type="button" class="hm_buttons" id="hm_homepage" onclick="homebutton()">Home</button>
-								<select class="hm_pages hm_pageselect" id="hm_pages" onchange="pages(this)">
-									<option class="hm_op" value="page4.html" disabled selected hidden>Page4</option>
-									<option class="hm_op" value="page2.html">Page2</option>
-									<option class="hm_op" value="page3.html">Page3</option>
-									<option class="hm_op" value="page5.html">Page5</option>
-									<option class="hm_op" value="page6.html">Page6</option>
-									<option class="hm_op" value="page7.html">Page7</option>
-								</select>
-								<input class="hm_search hm_buttons" type="text" placeholder="Find out">
-								<select class="hm_buttons" onclick="hm_selecter(this)" id="hm_selecter">
-									<option value="">EN</option>
-									<option value="homePageFR.html">FR</option>
-								</select>
-							</nav>
+					</nav>
 					</div>
-					<div class="container p-4">
-						<div class="row g-4">
+					<div class="container p-1">
+						<section class="hero-banner position-relative text-white">
+						  <div class="overlay"></div>
+
+						  <div class="container h-100 d-flex flex-column justify-content-center">
+							<h1 class="display-4 fw-bold">Conserving Forest Ecosystems</h1>
+							<p class="lead">Learn how SDG 15 targets protect forests and preserve natural habitats.</p>
+						  </div>
+						</section>
+						<div class="row gx-4">
 							<div class="col col-md">
 							  <h1 class="amarante-regular">Sustainable Development Goal 15:Life On Land</h1>
 							</div>
-							<div class="col-4 col-md-4">
-							  Hero Banner
-							</div>
 						</div>
 					</div>
+					
 				<section class="sec_4">	
 					<div class="container p-4">
 						<div class="row g-4">

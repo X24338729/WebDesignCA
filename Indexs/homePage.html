@@ -24,77 +24,160 @@
 			<link rel="stylesheet" href="../style.css">
 			
 		</head>
-		
-		<body class="hm_body">
-			<a id="one"></a>
-			<img class="hm_pics" id="hm_pic1" src="../images/deers.png" alt="">
-				<div class="hm_row1">
-					<div class="dropdown">
-						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Menu
-						</a>
-
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Page1</a></li>
-							<li><a class="dropdown-item" href="#">Page2</a></li>
-							<li><a class="dropdown-item" href="#">Page3</a></li>
-							<li><a class="dropdown-item" href="#">page4</a></li>
-							<li><a class="dropdown-item" href="#">page5</a></li>
-							<li><a class="dropdown-item" href="#">page6</a></li>
-						</ul>
-					</div>
-						<nav class="hm_nav">
-							<button type="button" class="hm_buttons" id="hm_homepage" onclick="homebutton()">Home</button>
-								<select class="hm_pages hm_pageselect" id="hm_pages" onchange="pages(this)">
-								<option class="hm_ophi" value="" disabled selected hidden>☰Pages</option>
-								<option class="hm_op" value="page2.html">Page2</option>
-								<option class="hm_op" value="page3.html">Page3</option>
-								<option class="hm_op" value="page4.html">Page4</option>
-								<option class="hm_op" value="page5.html">Page5</option>
-								<option class="hm_op" value="page6.html">Page6</option>
-								<option class="hm_op" value="page7.html">Page7</option>
-							</select>
-							<input class="hm_search hm_buttons" type="text" placeholder="Find out">
-							<select class="hm_buttons" onclick="hm_selecter(this)" id="hm_selecter">
-								<option value="">EN</option>
-								<option value="homePageFR.html">FR</option>
-							</select>
-						</nav>
-				</div>
+		<body class="hmPage_Body">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="homePage.html">Home</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">			
+								<form class="d-flex mx-auto my-2 my-lg-0" role="group">
+									<input class="form-control me-2" type="text" placeholder="Find Out...">
+									<button class="btn btn-outline-info" type="submit">Search</button> 
+								</form>	
+								<ul class="navbar-nav ms-auto">
+									<li class="nav-item">
+										<a class="nav-link" href="page2.html">Page2</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page3.html">Page3</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page4.html">Page4</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page5.html">Page5</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page6.html">Page6</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page7.html">Page7</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+			</nav>
+			<div class="row homeImageRow">
+				<div class="col">
 				
-				<div class="hm_row2">
-					
-						
-						<div class="hm_parag" id="hm_para1">
-							<h1 class="hm_header">About us</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-						<div class="hm_parag" id="hm_para2">
-							<h1 class="hm_header">Page 1</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-						<div class="hm_parag" id="hm_para3">
-							<h1 class="hm_header">Page 2</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
+				</div>
+				<div class="col">
 					
 				</div>
-				<div class="hm_row3">
-					<p class="hm_contact">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-					Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-					Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-					Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-					Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-					<a href="#one" class="hm_backtop hm_back">
-						<button type="button" class="hm_backtopbut hm_back"><p class="backtopp">Back to top</p></button>
-					</a>
+				<div class="col">
+				
 				</div>
-			<img class="hm_pics" id="hm_pic2" src="../images/nature1.png" alt="">
+			</div>
+			<div class="row hmPage_row2 buttonBackground">
+			<div class="col">
+				
+				</div>
+				<div class="col py-2">
+					<div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic radio toggle button group">
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onclick="aboutUs()">
+						<label class="btn btn-success" for="btnradio1">About Us</label>
+
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked onclick="homeBut()">
+						<label class="btn btn-success" for="btnradio2">Welcome</label>
+
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" onclick="pagesBut()">
+						<label class="btn btn-success" for="btnradio3">Pages</label>
+					</div>
+				</div>					
+				<div class="col">
+				
+				</div>
+
+			</div>
+			<div class="container">
+				<div class="row welcome" id="welcomeId">
+					<div class="col">
+						<p class="fs-3 text-white p-3 rounded-3">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+						</p>
+					</div>
+					<div class="col">
+						<p class="fs-3 text-white p-3 rounded-3">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+						</p>
+					</div>
+					<div class="col">
+						<p class="fs-3 text-white p-3 rounded-3">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+						</p>
+					</div>
+				</div>
+				<div class="row about_us" id="aboutUsId">
+					<div class="col">
+						<p class="fs-3 text-white p-3 rounded-3">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+						</p>
+					</div>
+					<div class="col">
+						<p class="fs-3 text-white p-3 rounded-3">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+						</p>
+					</div>
+					<div class="col">
+						<p class="fs-3 text-white p-3 rounded-3">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+						</p>
+					</div>
+					<div class="col">
+						<p class="fs-3 text-white p-3 rounded-3">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+						</p>
+					</div>
+				</div>
+				<div class="row pages" id="pagesId">
+					<div class="row">
+						<div class="col">
+							<img src="..." class="img-thumbnail" alt="...">
+							<p class="fs-3 text-white p-3 rounded-3">
+								Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+							</p>
+						</div>
+						<div class="col">
+							<img src="..." class="img-thumbnail" alt="...">
+							<p class="fs-3 text-white p-3 rounded-3">
+								Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+							</p>
+						</div>
+						<div class="col">
+							<img src="..." class="img-thumbnail" alt="...">
+							<p class="fs-3 text-white p-3 rounded-3">
+								Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<img src="..." class="img-thumbnail" alt="...">
+							<p class="fs-3 text-white p-3 rounded-3">
+								Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+							</p>
+						</div>
+						<div class="col">
+							<img src="..." class="img-thumbnail" alt="...">
+							<p class="fs-3 text-white p-3 rounded-3">
+								Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+							</p>
+						</div>
+						<div class="col">
+							<img src="..." class="img-thumbnail" alt="...">
+							<p class="fs-3 text-white p-3 rounded-3">
+								Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+				
 				<script>
+				document.getElementById("aboutUsId").style.display = "none";
+				document.getElementById("pagesId").style.display = "none";
 					function homebutton(){
 						window.location.href = 'homePage.html';
 					}
@@ -109,6 +192,21 @@
 						if(hmLang) {
 							window.location.href = hmLang;
 						}
+					}
+					function aboutUs(){
+						document.getElementById("welcomeId").style.display = "none";
+						document.getElementById("pagesId").style.display = "none";
+						document.getElementById("aboutUsId").style.display = "flex";
+					}
+					function homeBut(){
+						document.getElementById("welcomeId").style.display = "flex";
+						document.getElementById("pagesId").style.display = "none";
+						document.getElementById("aboutUsId").style.display = "none";
+					}
+					function pagesBut(){
+						document.getElementById("welcomeId").style.display = "none";
+						document.getElementById("pagesId").style.display = "flex";
+						document.getElementById("aboutUsId").style.display = "none";
 					}
 				</script>
 				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

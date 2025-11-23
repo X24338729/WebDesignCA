@@ -31,40 +31,50 @@
 		<body id="body_3">
 			<div id="pg_3">
 				<a id="one"></a>
-					<div class="hm_row1">
-						<div class="dropdown">
-							<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Menu
-							</a>
-
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Page1</a></li>
-								<li><a class="dropdown-item" href="#">Page2</a></li>
-								<li><a class="dropdown-item" href="#">Page3</a></li>
-								<li><a class="dropdown-item" href="#">page4</a></li>
-								<li><a class="dropdown-item" href="#">page5</a></li>
-								<li><a class="dropdown-item" href="#">page6</a></li>
-							</ul>
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">Page3</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">			
+								<form class="d-flex mx-auto my-2 my-lg-0" role="group">
+									<input class="form-control me-2" type="text" placeholder="Find Out...">
+									<button class="btn btn-outline-info" type="submit">Search</button> 
+								</form>	
+								<ul class="navbar-nav ms-auto">
+									<li class="nav-item">
+										<a class="nav-link" href="homePage">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page2.html">Page2</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page4.html">Page4</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page5.html">Page5</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page6.html">Page6</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page7.html">Page7</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-							<nav class="hm_nav">
-								<button type="button" class="hm_buttons" id="hm_homepage" onclick="homebutton()">Home</button>
-									<select class="hm_pages hm_pageselect" id="hm_pages" onchange="pages(this)">
-									<option class="hm_op" value="page3.html" disabled selected hidden>Page3</option>
-									<option class="hm_op" value="page2.html">Page2</option>
-									<option class="hm_op" value="page4.html">Page4</option>
-									<option class="hm_op" value="page5.html">Page5</option>
-									<option class="hm_op" value="page6.html">Page6</option>
-									<option class="hm_op" value="page7.html">Page7</option>
-								</select>
-								<input class="hm_search hm_buttons" type="text" placeholder="Find out">
-								<select class="hm_buttons" onclick="hm_selecter(this)" id="hm_selecter">
-									<option value="">EN</option>
-									<option value="homePageFR.html">FR</option>
-								</select>
-							</nav>
-					</div>
+					</nav>
 				
-					<div class="container p-4">
+					<div class="container p-1">
+						<section class="hero-banner position-relative text-white">
+						  <div class="overlay"></div>
+
+						  <div class="container h-100 d-flex flex-column justify-content-center">
+							<h1 class="display-4 fw-bold">Conserving Forest Ecosystems</h1>
+							<p class="lead">Learn how SDG 15 targets protect forests and preserve natural habitats.</p>
+						  </div>
+						</section>
 						<div class="row gx-4">
 							<div class="col col-md">
 							  <h1 class="amarante-regular">Sustainable Development Goal 15:Life On Land</h1>
@@ -92,22 +102,38 @@
 						</div>
 					</div>
 					
-					<div class="container p-4">
+					<div class="container p-4 z-0">
 						<div class="row gx-4 d-none d-md-flex">
-							<div class="col-2 col-md-2">
-								<img class="img-fluid order-5" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2 order-2">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2 order-3">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							<div class="col-4 col-md-4 offset-4 ">
+								<div id="carouselExampleCaptions" class="carousel slide">
+									 <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+										  <div class="carousel-inner">
+											<div class="carousel-item active" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+										  </div>
+										  <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										  </button>
+										  <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										  </button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -164,20 +190,36 @@
 					
 					<div class="container p-4">
 						<div class="row gx-4 d-none d-md-flex">
-							<div class="col-2 col-md-2">
-								<img class="img-fluid order-5" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2 order-2">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2 order-3">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							<div class="col-4 col-md-4 offset-4">
+								<div id="carouselExampleCaptions" class="carousel slide">
+									 <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+										  <div class="carousel-inner">
+											<div class="carousel-item active" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+										  </div>
+										  <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										  </button>
+										  <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										  </button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -235,20 +277,36 @@
 					
 					<div class="container p-4">
 						<div class="row gx-4">
-							<div class="col-2 col-md-2">
-								<img class="img-fluid order-5" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2 order-2">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2 order-3">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
-							</div>
-							<div class="col-2 col-md-2">
-								<img class="img-fluid" src="https://placeholder.pics/svg/300">
+							<div class="col-4 col-md-4 offset-4">
+								<div id="carouselExampleCaptions" class="carousel slide">
+									 <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+										  <div class="carousel-inner">
+											<div class="carousel-item active" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item" data-bs-interval="5000">
+											  <img src="https://placeholder.pics/svg/300" class="d-block w-100" alt="...">
+											</div>
+										  </div>
+										  <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										  </button>
+										  <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										  </button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

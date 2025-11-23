@@ -28,24 +28,55 @@
 		<body class="de_body">
 			<a id="one"></a>
 			<img class="hm_pics" id="hm_pic1" src="../images/deers.png" alt="">
-			<div class="hm_row1">	
-					<nav class="hm_nav pg2_navbar">
-						<button type="button" class="hm_buttons" id="hm_homepage" onclick="homebutton()">Home</button>
-						<select class="hm_pages hm_pageselect" id="hm_pages" onchange="pages(this)">
-							<option class="hm_op" value="page2.html" disabled selected hidden>Page2</option>
-							<option class="hm_op" value="page3.html">Page3</option>
-							<option class="hm_op" value="page4.html">Page4</option>
-							<option class="hm_op" value="page5.html">Page5</option>
-							<option class="hm_op" value="page6.html">Page6</option>
-							<option class="hm_op" value="page7.html">Page7</option>
-						</select>
-						<input class="hm_search hm_buttons" type="text" placeholder="Find out">
-						<select class="hm_buttons" onclick="hm_selecter(this)" id="hm_selecter">
-							<option value="">EN</option>
-							<option value="homePageFR.html">FR</option>
-						</select>
-					</nav>
-			</div>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark navPg2">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">Page2</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">			
+								<form class="d-flex mx-auto my-2 my-lg-0" role="group">
+									<input class="form-control me-2" type="text" placeholder="Find Out...">
+									<button class="btn btn-outline-info" type="submit">Search</button> 
+								</form>	
+								<ul class="navbar-nav ms-auto">
+									<li class="nav-item">
+										<a class="nav-link" href="homePage.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page3.html">Page3</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page4.html">Page4</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page5.html">Page5</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page6.html">Page6</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page7.html">Page7</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+			</nav>
+			<div class="container p-1 bannerPg2">
+						<section class="hero-banner position-relative text-white">
+						  <div class="overlay"></div>
+
+						  <div class="container h-100 d-flex flex-column justify-content-center">
+							<h1 class="display-4 fw-bold">Conserving Forest Ecosystems</h1>
+							<p class="lead">Learn how SDG 15 targets protect forests and preserve natural habitats.</p>
+						  </div>
+						</section>
+						<div class="row gx-4">
+							<div class="col col-md">
+							  <h1 class="amarante-regular">Sustainable Development Goal 15:Life On Land</h1>
+							</div>
+						</div>
+					</div>
 			<div class="de_row2">
 				<div class="de_r2r1" id="de_r2r1">
 					<img class="de_img de_img1" onmouseover="img1()" onmouseout="img1out()" src="../images/tree.avif" alt="">
