@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			
+			<!-- Meta Data -->
+			<meta charset="UTF-8">
+			<meta name="author" content="Alpsan Karademir">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="Support reforestation, wildlife protection, and ecosystem restoration through your donations. Every contribution helps restore forests and protect life on land under SDG 15.">
+			<meta name="keywords" content="donate SDG 15, forest restoration donation, wildlife protection, reforestation support, restore land, environmental donation, habitat conservation, biodiversity support">
+			
+			<!-- Javascript -->
+			<script rel="text/javascript" defer src="./javascript/script.js"></script>
+			
+			<!-- Title -->
+			<title>Donate to Restore Forests & Protect Wildlife | SDG 15 Support</title>
+			
+			<!-- Bootstrap CSS -->
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+			
+			<!-- GoogleFonts -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+			
+			<!-- Your own CSS -->
+			<link rel="stylesheet" href="./css/style.css?v=1">
+			
+		</head>
+		
+		<body class="pg7_body">
+			<!-- navbar -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="page7.html">Page7</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">			
+								<form class="d-flex mx-auto my-2 my-lg-0" role="group">
+									<input class="form-control me-2" type="text" placeholder="Find Out...">
+									<button class="btn btn-outline-info" type="submit">Search</button> 
+								</form>	
+								<ul class="navbar-nav ms-auto">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page2.html">Page2</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page3.html">Page3</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page4.html">Page4</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page5.html">Page5</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="page6.html">Page6</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+			</nav>
+			<div class="container-fluid">
+				<div class="row pg7_row1">
+					<div class="col-md-8">
+						<div class="container p-1 pg7Ban">
+							<section class="hero-banner position-relative text-white" id="donatePage">
+								<div class="overlay"></div>
+								<div class="container h-100 d-flex flex-column justify-content-center">
+									<h1 class="display-4 fw-bold">Your support helps protect vulnerable wildlife.</h1>
+									<p class="lead">Together, we can give animals like these a safer future.</p>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="col-md-4 pg7_col3">
+						<div class="donate_box container donateDiv">
+							<div class="btn-group donateButtons" role="group" aria-label="Basic radio toggle button group">
+								<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+								<label class="btn btn-success pg7_labels" for="btnradio1" onclick="oneOff()">One-off donation</label>
+								<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+								<label class="btn btn-success pg7_labels" for="btnradio2" onclick="montSub()">Monthly donation</label>
+							</div>
+							<p class="donateText">Amount to give</p>
+							<div class="oneOffCheck donateC" id="oneOffCheck">
+								<div class="form-check checkB" id="labelId1" onclick="donateLabel1()">
+									<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault1">
+									<label class="form-check-label pg7_formLabel" for="radioDefault1">20€</label>
+								</div>
+								<div class="form-check checkB" id="labelId2" onclick="donateLabel2()">
+									<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault2">
+									<label class="form-check-label pg7_formLabel" for="radioDefault2">100€</label>
+								</div>
+								<div class="form-check checkB" id="labelId3" onclick="donateLabel3()">
+									<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault3">
+									<label class="form-check-label pg7_formLabel" for="radioDefault3">500€</label>
+								</div>
+							</div>
+							<div class="monSubCheck donateC" id="monSubCheck">
+								<div class="form-check checkB" id="labelId4" onclick="donateLabel4()">
+									<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault4">
+									<label class="form-check-label pg7_formLabel" for="radioDefault4">10€  Min 6 months</label>
+								</div>
+								<div class="form-check checkB" id="labelId5" onclick="donateLabel5()">
+									<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault5" >
+									<label class="form-check-label pg7_formLabel" for="radioDefault5">50€  Min 6 months</label>
+								</div>
+								<div class="form-check checkB" id="labelId6" onclick="donateLabel6()">
+									<input class="form-check-input pg7_form" type="radio" name="radioDefault" id="radioDefault6" >
+									<label class="form-check-label pg7_formLabel" for="radioDefault6">250€  Min 6 months</label>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-success donateButtons1 donateButtons" id="donateSendBut" onclick="donateLink()" disabled>Donate</button>
+						</div>
+					</div>
+				</div>
+				<div class="row pg7_row3">
+					<div class="row pg7_impact">
+						<div class="col-12">
+							<div class="impact-card impact-trees text-white">
+								<div class="impact-overlay"></div>
+								<div class="impact-content">
+									<h2 class="impact-title p-3">Trees You Helped Plant</h2>
+									<p class="impact-text p-3">
+										Thanks to your donations, we have already planted over
+										<strong>2,500 new trees</strong> in degraded forest areas.  
+										Each tree captures CO₂, restores soil and creates a new home for wildlife.
+									</p>
+								</div>
+							</div>
+						</div>
+							<div class="col-12">
+								<div class="impact-card impact-land text-white">
+									<div class="impact-overlay"></div>
+									<div class="impact-content">
+										<h2 class="impact-title p-3">Land You Helped Restore</h2>
+										<p class="impact-text p-3">
+											Together, we are bringing life back to dry and damaged land.  
+											Your support helps us <strong>restore hectares of soil</strong> through
+											reforestation, erosion control and sustainable farming practices.
+										</p>
+									</div>
+								</div>
+							</div>
+						<div class="col-12">
+							<div class="impact-card impact-wildlife text-white">
+								<div class="impact-overlay"></div>
+								<div class="impact-content">
+									<h2 class="impact-title p-3">Wildlife You Help Protect</h2>
+									<p class="impact-text p-3">
+										Healthy forests are home to countless species.  
+										Your donations support projects that <strong>protect endangered animals</strong>,
+										rebuild their habitats and keep biodiversity alive.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				let pg7LabelsCheck = document.getElementById("labelId1");
+				pg7LabelsCheck.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				let pg7LabelsCheck1 = document.getElementById("labelId2");
+				pg7LabelsCheck1.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				let pg7LabelsCheck2 = document.getElementById("labelId3");
+				pg7LabelsCheck2.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				let pg7LabelsCheck3 = document.getElementById("labelId4");
+				pg7LabelsCheck3.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				let pg7LabelsCheck4 = document.getElementById("labelId5");
+				pg7LabelsCheck4.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				let pg7LabelsCheck5 = document.getElementById("labelId6");
+				pg7LabelsCheck5.addEventListener('click', function(){
+					document.getElementById("donateSendBut").disabled = false;
+				});
+				function donateLink(){
+					window.location.href = "444"
+				};
+				function oneOff(){
+					document.getElementById("oneOffCheck").style.display = "inline";
+					document.getElementById("monSubCheck").style.display = "none";
+					document.getElementById("donateSendBut").disabled = true;
+				};
+				function montSub(){
+					document.getElementById("oneOffCheck").style.display = "none ";
+					document.getElementById("monSubCheck").style.display = "block ";
+					document.getElementById("donateSendBut").disabled = true;
+				};
+				function donateLabel1(){
+					document.getElementById("labelId1").style.backgroundColor = "#66BB6A";
+					document.getElementById("labelId2").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId3").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId4").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId5").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId6").style.backgroundColor = "#E8F5E9";
+				};
+				function donateLabel2(){
+					document.getElementById("labelId1").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId2").style.backgroundColor = "#66BB6A";
+					document.getElementById("labelId3").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId4").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId5").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId6").style.backgroundColor = "#E8F5E9";
+				};
+				function donateLabel3(){
+					document.getElementById("labelId1").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId2").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId3").style.backgroundColor = "#66BB6A";
+					document.getElementById("labelId4").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId5").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId6").style.backgroundColor = "#E8F5E9";
+				};
+				function donateLabel4(){
+					document.getElementById("labelId4").style.backgroundColor = "#66BB6A";
+					document.getElementById("labelId5").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId6").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId1").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId2").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId3").style.backgroundColor = "#E8F5E9";
+				};
+				function donateLabel5(){
+					document.getElementById("labelId4").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId5").style.backgroundColor = "#66BB6A";
+					document.getElementById("labelId6").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId1").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId2").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId3").style.backgroundColor = "#E8F5E9";
+				};
+				function donateLabel6(){
+					document.getElementById("labelId4").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId5").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId6").style.backgroundColor = "#66BB6A";
+					document.getElementById("labelId1").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId2").style.backgroundColor = "#E8F5E9";
+					document.getElementById("labelId3").style.backgroundColor = "#E8F5E9";
+				};
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		</body>
+	</html>
