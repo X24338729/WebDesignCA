@@ -184,12 +184,13 @@ const observer = new IntersectionObserver((entries) => {
 targets.forEach(t => observer.observe(t));
 
 // form
+document.getElementById("quiz_btn").addEventListener("click", 
 document.getElementById("quizForm").addEventListener("submit", function(event) {
   event.preventDefault();
 
   const q1 = document.querySelector("input[name='q1']:checked");
   const q2 = document.querySelector("input[name='q2']:checked");
-  const q3 = document.querySelector("input[name='q3']:checked");
+  const q3 = document.querySelector("option[name='q3']:checked");
   const q4 = document.querySelector("input[name='q4']:checked");
   const q5 = document.querySelector("input[name='q5']:checked");
   const q6 = document.querySelector("input[name='q6']:checked");
@@ -222,4 +223,46 @@ document.getElementById("quizForm").addEventListener("submit", function(event) {
 
   document.getElementById("result").classList.remove("text-danger");
   document.getElementById("result").classList.add("text-success");
+}));
+document.getElementById("quiz_btn").addEventListener("click",()=>{
+	document.getElementById("quizhd").hidden=false;
+	document.getElementById("quiz_btn").hidden=true;
+});
+
+let currentQuestion = 0;
+const questions = document.querySelectorAll(".question");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const submitBtn = document.getElementById("btnSub");
+
+// Hide all & show first question
+showQuestion(currentQuestion);
+
+function showQuestion(index) {
+  questions.forEach(q => q.style.display = "none");
+  questions[index].style.display = "block";
+
+  // Hide back button on first question
+  prevBtn.style.display = index === 0 ? "none" : "inline-block";
+
+  // Hide next button on last question
+  nextBtn.style.display = index === questions.length - 1 ? "none" : "inline-block";
+
+  // Show submit only on last question
+  submitBtn.style.display = index === questions.length - 1 ? "block" : "none";
+}
+
+// Buttons
+nextBtn.addEventListener("click", () => {
+  if (currentQuestion < questions.length - 1) {
+    currentQuestion++;
+    showQuestion(currentQuestion);
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  if (currentQuestion > 0) {
+    currentQuestion--;
+    showQuestion(currentQuestion);
+  }
 });
