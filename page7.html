@@ -10,7 +10,7 @@
 			<meta name="keywords" content="donate SDG 15, forest restoration donation, wildlife protection, reforestation support, restore land, environmental donation, habitat conservation, biodiversity support">
 			
 			<!-- Javascript -->
-			<script rel="text/javascript" defer src="./javascript/script.js?v=1"></script>
+			<script rel="text/javascript" defer src="./javascript/script.js?v=2"></script>
 			
 			<!-- Title -->
 			<title>Donate to Restore Forests & Protect Wildlife | SDG 15 Support</title>
@@ -24,7 +24,7 @@
 			<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 			
 			<!-- Your own CSS -->
-			<link rel="stylesheet" href="./css/style.css?v=1">
+			<link rel="stylesheet" href="./css/style.css?v=2">
 			
 		</head>
 		
@@ -32,7 +32,7 @@
 			<!-- navbar -->
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 						<div class="container-fluid">
-							<a class="navbar-brand" href="page7.html">Page7</a>
+							<a class="navbar-brand" href="page7.html">Donate</a>
 							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							</button>
@@ -46,24 +46,25 @@
 										<a class="nav-link" href="index.html">Home</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="page2.html">Page2</a>
+										<a class="nav-link" href="page2.html">Actions</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="page3.html">Page3</a>
+										<a class="nav-link" href="page3.html">Biodiversity</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="page4.html">Page4</a>
+										<a class="nav-link" href="page4.html">Resources</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="page5.html">Page5</a>
+										<a class="nav-link" href="page5.html">Forests</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="page6.html">Page6</a>
+										<a class="nav-link" href="page6.html">Quiz</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 			</nav>
+			<!-- banner -->
 			<div class="container-fluid">
 				<div class="row pg7_row1">
 					<div class="col-md-8">
@@ -77,6 +78,7 @@
 							</section>
 						</div>
 					</div>
+					<!-- Donate Box -->
 					<div class="col-md-4 pg7_col3">
 						<div class="donate_box container donateDiv">
 							<div class="btn-group donateButtons" role="group" aria-label="Basic radio toggle button group">
@@ -121,6 +123,7 @@
 				<div class="row pg7_row3">
 					<div class="row pg7_impact">
 						<div class="col-12">
+						<!-- First card -->
 							<div class="impact-card impact-trees text-white">
 								<div class="impact-overlay"></div>
 								<div class="impact-content">
@@ -134,6 +137,7 @@
 							</div>
 						</div>
 							<div class="col-12">
+							<!-- Second card -->
 								<div class="impact-card impact-land text-white">
 									<div class="impact-overlay"></div>
 									<div class="impact-content">
@@ -147,6 +151,7 @@
 								</div>
 							</div>
 						<div class="col-12">
+						<!-- Third card -->
 							<div class="impact-card impact-wildlife text-white">
 								<div class="impact-overlay"></div>
 								<div class="impact-content">
@@ -163,44 +168,55 @@
 				</div>
 			</div>
 			<script>
+			//this makes the submit button clickable ,ıf one of the options has been checked
 				let pg7LabelsCheck = document.getElementById("labelId1");
 				pg7LabelsCheck.addEventListener('click', function(){
 					document.getElementById("donateSendBut").disabled = false;
 				});
+			//this makes the submit button clickable ,ıf one of the options has been checked
 				let pg7LabelsCheck1 = document.getElementById("labelId2");
 				pg7LabelsCheck1.addEventListener('click', function(){
 					document.getElementById("donateSendBut").disabled = false;
 				});
+			//this makes the submit button clickable ,ıf one of the options has been checked
 				let pg7LabelsCheck2 = document.getElementById("labelId3");
 				pg7LabelsCheck2.addEventListener('click', function(){
 					document.getElementById("donateSendBut").disabled = false;
 				});
+			//this makes the submit button clickable ,ıf one of the options has been checked
 				let pg7LabelsCheck3 = document.getElementById("labelId4");
 				pg7LabelsCheck3.addEventListener('click', function(){
 					document.getElementById("donateSendBut").disabled = false;
 				});
+			//this makes the submit button clickable ,ıf one of the options has been checked
 				let pg7LabelsCheck4 = document.getElementById("labelId5");
 				pg7LabelsCheck4.addEventListener('click', function(){
 					document.getElementById("donateSendBut").disabled = false;
 				});
+			//this makes the submit button clickable ,ıf one of the options has been checked
 				let pg7LabelsCheck5 = document.getElementById("labelId6");
 				pg7LabelsCheck5.addEventListener('click', function(){
 					document.getElementById("donateSendBut").disabled = false;
 				});
 				function donateLink(){
-					window.location.href = "444"
+				//Submit button target
+					alert("Thanks for your valuable Donation!!");
+					//window.location.href = "444"
 				};
 				function oneOff(){
+				//Switches between payment options
 					document.getElementById("oneOffCheck").style.display = "inline";
 					document.getElementById("monSubCheck").style.display = "none";
 					document.getElementById("donateSendBut").disabled = true;
 				};
 				function montSub(){
+				//Switches between payment options
 					document.getElementById("oneOffCheck").style.display = "none ";
 					document.getElementById("monSubCheck").style.display = "block ";
 					document.getElementById("donateSendBut").disabled = true;
 				};
 				function donateLabel1(){
+				//changes the color of selected
 					document.getElementById("labelId1").style.backgroundColor = "#66BB6A";
 					document.getElementById("labelId2").style.backgroundColor = "#E8F5E9";
 					document.getElementById("labelId3").style.backgroundColor = "#E8F5E9";
@@ -209,6 +225,7 @@
 					document.getElementById("labelId6").style.backgroundColor = "#E8F5E9";
 				};
 				function donateLabel2(){
+				//changes the color of selected
 					document.getElementById("labelId1").style.backgroundColor = "#E8F5E9";
 					document.getElementById("labelId2").style.backgroundColor = "#66BB6A";
 					document.getElementById("labelId3").style.backgroundColor = "#E8F5E9";
@@ -217,6 +234,7 @@
 					document.getElementById("labelId6").style.backgroundColor = "#E8F5E9";
 				};
 				function donateLabel3(){
+				//changes the color of selected
 					document.getElementById("labelId1").style.backgroundColor = "#E8F5E9";
 					document.getElementById("labelId2").style.backgroundColor = "#E8F5E9";
 					document.getElementById("labelId3").style.backgroundColor = "#66BB6A";
@@ -225,6 +243,7 @@
 					document.getElementById("labelId6").style.backgroundColor = "#E8F5E9";
 				};
 				function donateLabel4(){
+				//changes the color of selected
 					document.getElementById("labelId4").style.backgroundColor = "#66BB6A";
 					document.getElementById("labelId5").style.backgroundColor = "#E8F5E9";
 					document.getElementById("labelId6").style.backgroundColor = "#E8F5E9";
@@ -233,6 +252,7 @@
 					document.getElementById("labelId3").style.backgroundColor = "#E8F5E9";
 				};
 				function donateLabel5(){
+				//changes the color of selected
 					document.getElementById("labelId4").style.backgroundColor = "#E8F5E9";
 					document.getElementById("labelId5").style.backgroundColor = "#66BB6A";
 					document.getElementById("labelId6").style.backgroundColor = "#E8F5E9";
@@ -241,6 +261,7 @@
 					document.getElementById("labelId3").style.backgroundColor = "#E8F5E9";
 				};
 				function donateLabel6(){
+				//changes the color of selected
 					document.getElementById("labelId4").style.backgroundColor = "#E8F5E9";
 					document.getElementById("labelId5").style.backgroundColor = "#E8F5E9";
 					document.getElementById("labelId6").style.backgroundColor = "#66BB6A";

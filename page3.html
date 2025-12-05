@@ -6,14 +6,14 @@
 			<meta charset="UTF-8">
 			<meta name="author" content="Darius Joaquim Alvares">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta name="description" content="description">
-			<meta name="keywords" content="tags">
+			<meta name="description" content="discover how to prevent poaching and preserve biodiversity">
+			<meta name="keywords" content="biodiversity, poaching, unauthorized, preserve">
 			
 			<!-- Javascript -->
-			<script rel="text/javascript" defer src="./javascript/script.js?v=1"></script>
+			<script rel="text/javascript" defer src="./javascript/script.js?v=2"></script>
 			
 			<!-- Title -->
-			<title>Page 3</title>
+			<title>Biodiversity|Poaching</title>
 			
 			<!-- Bootstrap CSS -->
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -24,7 +24,7 @@
 			<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 			
 			<!-- Your own CSS -->
-			<link rel="stylesheet" href="./css/style.css?v=1">
+			<link rel="stylesheet" href="./css/style.css?v=2">
 			
 		</head>
 		
@@ -33,8 +33,11 @@
 			<a id="one"></a>
 			<!-- navbar -->
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark z-3">
+			
+				<!-- a bootstrap container provides full-width of the viewport -->
 				<div class="container-fluid">
-					<a class="navbar-brand" href="page3.html">Page3</a>
+				
+					<a class="navbar-brand" href="page3.html">Biodiversity</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 					</button>
@@ -48,98 +51,113 @@
 								<a class="nav-link" href="index.html">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="page2.html">Page2</a>
+								<a class="nav-link" href="page2.html">Actions</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="page4.html">Page4</a>
+								<a class="nav-link" href="page4.html">Resources</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="page5.html">Page5</a>
+								<a class="nav-link" href="page5.html">Forests</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="page6.html">Page6</a>
+								<a class="nav-link" href="page6.html">Quiz</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="page7.html">Page7</a>
+								<a class="nav-link" href="page7.html">Donate</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
-					
+					<!-- Hero Banner gives information on what the page is about -->
 			<div class="container-fluid p-0">
 				<div class="container-xs">
 					<section class="hero-banner position-relative text-white" id="poachingPage">
 						<div class="overlay"></div>
 
 						<div class="container h-100 d-flex flex-column justify-content-center">
-							<h1 class="display-4 fw-bold">Conserving Forest Ecosystems</h1>
-							<p class="lead">Learn how SDG 15 targets protect forests and preserve natural habitats.</p>
+							<h1 class="display-4 fw-bold">Protect Biodiversity And An End To Poaching</h1>
+							<p class="lead">Learn how SDG 15 targets protect biodiversity and prevent poaching.</p>
 						</div>
 					</section>
 				</div>
 				
-				
+					<!--a bootstrap row containing one subgoal of the SDG 15 in section one -->
 					<div class="row">
 						<div class="col-md-10 offset-md-1">
-							<div class="card my-2">
-								
+							<div class="card card_pg3 my-2">
+								<!-- bootstrap row containing images for first section -->
 									<div class="row g-3">
+									<!-- This column is not displayed before the medium breakpoint  -->
 										<div class="col-md-4 d-none d-md-flex">
-											<div class="card flex-fill h-100">
-												<img src="./Images/sdg_15_5_1.png" class="card-img-top rounded img-thumbnail flex-fill" alt="...">
+											<div class="card flex-fill">
+												<img src="./Images/sdg_15_5_1.png" class="card-img-top rounded" alt="Biodiversity preserved">
 											</div>
 										</div>
-										<div class="col-md-4">
-											<div class="card flex-fill h-100">
-												<img src="./Images/sdg_15_5_2.png" class="card-img-top rounded img-thumbnail flex-fill" alt="...">
+										<!-- This column is displayed when the extrasmall breakpoint is hit and is not displayed when medium breakpoint is hit -->
+										<div class="col-xs-4 d-md-none">
+											<div class="card flex-fill">
+												<img src="./Images/sdg_15_5_2.png" class="card-img-top rounded" alt="Nature Relaxing">
 											</div>
 										</div>
-										<div class="col-md-4 d-none d-md-flex">
-											<div class="card flex-fill h-100">
-												<img src="./Images/sdg_15_5_3.png" class="card-img-top rounded img-thumbnail flex-fill" alt="...">
+										<!-- This column is not displayed before the medium breakpoint  -->
+										<!-- this column is offset by a magnitude of 4(leaves 4 spaces before this current column) -->
+										<div class="col-md-4 d-none d-md-flex offset-md-4">
+											<div class="card flex-fill">
+												<img src="./Images/sdg_15_5_3.png" class="card-img-top rounded" alt="Peaceful Scenery">
 											</div>
 										</div>
 									</div>
-								
+								<!-- main content displayed as a bootstrap card -->
 								<div class="card-body">
-									<div class="card-header">
-										<h5 class="card-title">Target 15.5: PROTECT BIODIVERSITY AND NATURAL HABITATS</h5>
+									<div class="card-header hd_pg3">
+										<h5 class="card-title amarante-regular">Target 15.5: PROTECT BIODIVERSITY AND NATURAL HABITATS</h5>
 									</div>	
+									<!-- Row containing the content related to SDG subgoal 15.5 for section one -->
+									<!-- it has a gutter of magnitude 1(space between column elements) -->
 									<div class="row g-1">
-									
+									<!-- All columns have a medium breakpoint and of grid size 4 -->
 										<div class="col-md-4">
-											<div class="card flex-fill h-100">
-												<p class="card-text">Target 15.5 aims to take urgent action to reduce the loss of biodiversity and prevent endangered species from going extinct.</p>
+											<div class="card flex-fill h-100 bck_pg3">
+												<div class="card-body card-body_pg3">
+													<p class="card-text playfair">Target 15.5 aims to take urgent action to reduce the loss of biodiversity and prevent endangered species from going extinct.</p>
+												</div>
 											</div>
 										</div>
 										
 										<div class="col-md-4">
-											<div class="card flex-fill h-100">
-												<div class="card-header">
-													<p class="card-text">Why it matters:</p>
+											
+											<div class="card flex-fill h-100 bck_pg3">
+												<div class="card-body card-body_pg3">
+												<div class="card-header hd_pg3">
+													<p class="card-text amarante-regular">Why it matters:</p>
 												</div>
 												 <ul class="list-group-flush">
-												<li><p class="card-text">Biodiversity keeps ecosystems balanced and healthy.</p></li>
-												<li><p class="card-text">Losing species affects food chains, agriculture, and human life.</p></li>
-												<li><p class="card-text">Healthy habitats protect against floods, climate change, and soil erosion.</p></li>
+												<li><p class="card-text playfair">Biodiversity keeps ecosystems balanced and healthy.</p></li>
+												<li><p class="card-text playfair">Losing species affects food chains, agriculture, and human life.</p></li>
+												<li><p class="card-text playfair">Healthy habitats protect against floods, climate change, and soil erosion.</p></li>
 												</ul>
+												</div>
 											</div>
+											
 										</div>
 										
 										<div class="col-md-4">
-											<div class="card flex-fill h-100">
-												<div class="card-header">
-													<p class="card-text">Examples of actions for Target 15.5:</p>
+											
+											<div class="card flex-fill h-100 bck_pg3">
+												<div class="card-body card-body_pg3">	
+													<div class="card-header hd_pg3">
+														<p class="card-text amarante-regular">Examples of actions for Target 15.5:</p>
+													</div>
+													 
+													 <ul class="list-group-flush">
+														<li><p class="card-text playfair">Creating wildlife sanctuaries and national parks</p></li>
+														<li><p class="card-text playfair">Restoring damaged ecosystems</p></li>
+														<li><p class="card-text playfair">Reducing pollution in sensitive areas</p></li>
+														<li><p class="card-text playfair">Reforestation and planting native trees</p></li>
+														<li><p class="card-text playfair">Protecting endangered species such as tigers, rhinos, pandas, etc.</p></li>
+													</ul>
 												</div>
-												 
-												 <ul class="list-group-flush">
-													<li><p class="card-text">Creating wildlife sanctuaries and national parks</p></li>
-													<li><p class="card-text">Restoring damaged ecosystems</p></li>
-													<li><p class="card-text">Reducing pollution in sensitive areas</p></li>
-													<li><p class="card-text">Reforestation and planting native trees</p></li>
-													<li><p class="card-text">Protecting endangered species such as tigers, rhinos, pandas, etc.</p></li>
-												</ul>
 											</div>
 										</div>
 									</div>	
@@ -147,65 +165,74 @@
 							</div>
 						</div>
 					</div>
+					<!-- another bootstrap row containing another subgoal of SDG 15 for section two -->
 					<div class="row">
 						<div class="col-md-10 offset-md-1">
-							<div class="card my-2">
+							<div class="card card_pg3 my-2">
+							<!-- bootstrap row containing images for first section -->
 								<div class="row">
+									<!-- This column is not displayed before the medium breakpoint  -->
 									<div class="col-md-4 d-none d-md-flex">
-										<img src="./Images/sdg_15_7_1.png" class="card-img-top rounded img-thumbnail" alt="...">
+										<img src="./Images/sdg_15_7_1.png" class="card-img-top rounded" alt="Prevention of poaching">
 									</div>
-									<div class="col-md-4">
-										<img src="./Images/sdg_15_7_2.png" class="card-img-top rounded img-thumbnail" alt="...">
+									<!-- This column is displayed when the extrasmall breakpoint is hit and is not displayed when medium breakpoint is hit -->
+									<div class="col-xs-4 d-md-none">
+										<img src="./Images/sdg_15_7_2.png" class="card-img-top rounded" alt="elimination of poaching">
 									</div>
-									<div class="col-md-4 d-none d-md-flex">
-										<img src="./Images/sdg_15_7_3.png" class="card-img-top rounded img-thumbnail" alt="...">
+									<!-- This column is not displayed before the medium breakpoint  -->
+									<!-- this column is offset by a magnitude of 4(leaves 4 spaces before this current column) -->
+									<div class="col-md-4 d-none d-md-flex offset-md-4">
+										<img src="./Images/sdg_15_7_3.png" class="card-img-top rounded" alt="prevention of illegal animal trafficking">
 									</div>
 								</div>
-								<div class="card-body">
-									<div class="card-header">
-										<h5 class="card-title">Target 15.7: ELIMINATE POACHING AND TRAFFICKING OF PROTECTED SPECIES</h5>
+								<!-- Main content is situated in a bootstrap card for second section -->
+								<div class="card-body card-body_pg3">
+									<div class="card-header hd_pg3">
+										<h5 class="card-title amarante-regular">Target 15.7: ELIMINATE POACHING AND TRAFFICKING OF PROTECTED SPECIES</h5>
 									</div>
+									<!-- row containing all the content related to SDG subgoal 15.7 -->
+									<!-- it has a gutter of magnitude 1(space between column elements) -->
 									<div class="row g-1">
-									
+									<!-- All columns have a medium breakpoint and of grid size 4 -->
 										<div class="col-md-4">
-											<div class="card flex-fill h-100">
-												<div class="card-body">
-													<p class="card-text">Target 15.7 focuses on stopping poaching, illegal hunting, and the trafficking of protected species.</p>
-													<p class="card-text">Many animals are killed for ivory, fur, skins, horns, or sold illegally as exotic pets.</p>
+											<div class="card flex-fill h-100 bck_pg3">
+												<div class="card-body card-body_pg3">
+													<p class="card-text playfair">Target 15.7 focuses on stopping poaching, illegal hunting, and the trafficking of protected species.</p>
+													<p class="card-text playfair">Many animals are killed for ivory, fur, skins, horns, or sold illegally as exotic pets.</p>
 												</div>
 											</div> 
 										</div>
 										
 										<div class="col-md-4">
-											<div class="card flex-fill h-100">
-												<div class="card-body">
-													<div class="card-header">
-														<p class="card-text">Why it matters:</p>
+											<div class="card flex-fill h-100 bck_pg3">
+												<div class="card-body card-body_pg3">
+													<div class="card-header hd_pg3">
+														<p class="card-text amarante-regular">Why it matters:</p>
 													</div>
 													 
 													 <ul class="list-group-flush">
-														<li><p class="card-text">Many animals are killed for ivory, fur, skins, horns, or sold illegally as exotic pets.</p></li>
-														<li><p class="card-text">Illegal wildlife trade is one of the largest criminal industries in the world.</p></li>
-														<li><p class="card-text">Removing animals from ecosystems damages the entire food chain.</p></li>
-														<li><p class="card-text">Wildlife belongs in the wild, not in illegal markets.</p></li>
+														<li><p class="card-text playfair">Many animals are killed for ivory, fur, skins, horns, or sold illegally as exotic pets.</p></li>
+														<li><p class="card-text playfair">Illegal wildlife trade is one of the largest criminal industries in the world.</p></li>
+														<li><p class="card-text playfair">Removing animals from ecosystems damages the entire food chain.</p></li>
+														<li><p class="card-text playfair">Wildlife belongs in the wild, not in illegal markets.</p></li>
 													</ul>
 												</div>
 											</div>
 										</div>
 										
 										<div class="col-md-4">
-											<div class="card flex-fill h-100">
-												<div class="card-body">
-													<div class="card-header">
-														<p class="card-text">Examples of actions for Target 15.7:</p>
+											<div class="card flex-fill h-100 bck_pg3">
+												<div class="card-body card-body_pg3">
+													<div class="card-header hd_pg3">
+														<p class="card-text amarante-regular">Examples of actions for Target 15.7:</p>
 													</div>
 													 
 													 <ul class="list-group-flush">
-														<li><p class="card-text">Stricter laws and penalties for wildlife crime</p></li>
-														<li><p class="card-text">Anti-poaching patrols in forests</p></li>
-														<li><p class="card-text">Tracking and shutting down illegal wildlife markets</p></li>
-														<li><p class="card-text">Technology like drones and camera traps to catch poachers</p></li>
-														<li><p class="card-text">Educating people to avoid buying illegal animal products</p></li>
+														<li><p class="card-text playfair">Stricter laws and penalties for wildlife crime</p></li>
+														<li><p class="card-text playfair">Anti-poaching patrols in forests</p></li>
+														<li><p class="card-text playfair">Tracking and shutting down illegal wildlife markets</p></li>
+														<li><p class="card-text playfair">Technology like drones and camera traps to catch poachers</p></li>
+														<li><p class="card-text playfair">Educating people to avoid buying illegal animal products</p></li>
 													</ul>
 												</div>
 											</div>
@@ -215,64 +242,73 @@
 							</div>
 						</div>
 					</div>
-					<div class="row g-1">
+					<!-- last bootstrap row containing a subgoal of SDG 15 in section three -->
+					<div class="row">
 						<div class="col-md-10 offset-md-1">
-							<div class="card my-2">
+							<div class="card card_pg3 my-2">
+								<!-- bootstrap row containing images for first section -->
 								<div class="row">
+									<!-- This column is not displayed before the medium breakpoint  -->
 									<div class="col-md-4 d-none d-md-flex">
-										<img src="./Images/sdg_15_c_1.png" class="card-img-top rounded img-thumbnail" alt="...">
+										<img src="./Images/sdg_15_c_1.png" class="card-img-top rounded" alt="combat global poaching">
 									</div>
-									<div class="col-md-4">
-										<img src="./Images/sdg_15_c_2.png" class="card-img-top rounded img-thumbnail" alt="...">
+									<!-- This column is displayed when the extrasmall breakpoint is hit and is not displayed when medium breakpoint is hit -->
+									<div class="col-xs-4 d-md-none">
+										<img src="./Images/sdg_15_c_2.png" class="card-img-top rounded" alt="combat trafficking of animals">
 									</div>
-									<div class="col-md-4 d-none d-md-flex">
-										<img src="./Images/sdg_15_c_3.png" class="card-img-top rounded img-thumbnail" alt="...">
+									<!-- This column is not displayed before the medium breakpoint  -->
+									<!-- this column is offset by a magnitude of 4(leaves 4 spaces before this current column) -->
+									<div class="col-md-4 d-none d-md-flex offset-md-4">
+										<img src="./Images/sdg_15_c_3.png" class="card-img-top rounded" alt="prevent poaching">
 									</div>
 								</div>
+								<!-- Main content is displayed using bootstrap cards for the third section -->
 								<div class="card-body">
-									<div class="card-header">
-										<h5 class="card-title">Target 15.C: COMBAT GLOBAL POACHING AND TRAFFICKING</h5>
+									<div class="card-header hd_pg3">
+										<h5 class="card-title amarante-regular">Target 15.C: COMBAT GLOBAL POACHING AND TRAFFICKING</h5>
 									</div>
+									<!-- row that contains content based on the SDG subgoal 15.C -->
+									<!-- it has a gutter of magnitude 1(space between column elements) -->
 									<div class="row g-1">
-										
+										<!-- All columns have a medium breakpoint and of grid size 4 -->
 										<div class="col-md-4">
-											<div class="card flex-fill h-100">
-												<div class="card-body">
-													<p class="card-text">Target 15.c is about helping governments and local communities fight poaching and wildlife trafficking.</p>
-													<p class="card-text">Many communities living near forests depend on resources for survival and often lack funding or tools to protect wildlife.</p>
+											<div class="card flex-fill h-100 bck_pg3">
+												<div class="card-body card-body_pg3">
+													<p class="card-text playfair">Target 15.C is about helping governments and local communities fight poaching and wildlife trafficking.</p>
+													<p class="card-text playfair">Many communities living near forests depend on resources for survival and often lack funding or tools to protect wildlife.</p>
 												</div>
 											</div>
 										</div>
 										
 										<div class="col-md-4">
-											<div class="card flex-fill h-100">
-												<div class="card-body">
-													<div class="card-header">
-													<p class="card-text">Why it matters:</p>
+											<div class="card flex-fill h-100 bck_pg3">
+												<div class="card-body card-body_pg3">
+													<div class="card-header hd_pg3">
+														<p class="card-text amarante-regular">Why it matters:</p>
 													</div>
 													 
 													 <ul class="list-group-flush">
-														<li><p class="card-text">Local people are the first line of defense for forests and wildlife.</p></li>
-														<li><p class="card-text">With proper support, communities can protect nature and earn sustainable livelihoods.</p></li>
-														<li><p class="card-text">Cooperation between countries helps stop wildlife smuggling across borders.</p></li>
+														<li><p class="card-text playfair">Local people are the first line of defense for forests and wildlife.</p></li>
+														<li><p class="card-text playfair">With proper support, communities can protect nature and earn sustainable livelihoods.</p></li>
+														<li><p class="card-text playfair">Cooperation between countries helps stop wildlife smuggling across borders.</p></li>
 													</ul>
 												</div>
 											</div>
 										</div>	
 										
 										<div class="col-md-4"> 
-											<div class="card flex-fill h-100">
-												<div class="card-body">
-													<div class="card-header">
-														<p class="card-text">Examples of actions for Target 15.C:</p>
+											<div class="card flex-fill h-100 bck_pg3">
+												<div class="card-body card-body_pg3">
+													<div class="card-header hd_pg3">
+														<p class="card-text amarante-regular">Examples of actions for Target 15.C:</p>
 													</div>
 													
 													 <ul class="list-group-flush">
-														<li><p class="card-text">Providing training and equipment for forest rangers</p></li>
-														<li><p class="card-text">Funding community-based conservation programs</p></li>
-														<li><p class="card-text">Offering alternative jobs so people do not rely on poaching</p></li>
-														<li><p class="card-text">Using technology to monitor wildlife activity</p></li>
-														<li><p class="card-text">International cooperation to stop smuggling networks</p></li>
+														<li><p class="card-text playfair">Providing training and equipment for forest rangers</p></li>
+														<li><p class="card-text playfair">Funding community-based conservation programs</p></li>
+														<li><p class="card-text playfair">Offering alternative jobs so people do not rely on poaching</p></li>
+														<li><p class="card-text playfair">Using technology to monitor wildlife activity</p></li>
+														<li><p class="card-text playfair">International cooperation to stop smuggling networks</p></li>
 													</ul>
 												</div>
 											</div>
@@ -282,16 +318,9 @@
 							</div>
 						</div>
 					</div>
-				
-				
-								<a href="#one" class="hm_backtop hm_back">
-									<button type="button" class="hm_backtopbut hm_back"><p class="backtopp">Back to top</p></button>
-								</a>
-					
-				
 			</div>
 				
-					
+			<!-- bootstrap javascript-->
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 			
 		</body>

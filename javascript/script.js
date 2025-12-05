@@ -1,22 +1,9 @@
-
-function homebutton(){
-							window.location.href = 'index.html';
-						}
-						function pages(selectElement){
-							let hmPages = selectElement.value;
-							if(hmPages) {
-								window.location.href = hmPages;
-							}
-						}
-						function hm_selecter(selectElement){
-							let hmLang = selectElement.value;
-							if(hmLang) {
-								window.location.href = hmLang;
-							}
-						}
+// Common for all pages
 // Nav Bar Hover
 const links = document.querySelectorAll(".navbar a");
-
+// querySelectorAll returns a static nodelist which lists all the elements that have the class".navbar a"
+// To access each of them we use the keyword "forEach" to traverse the nodelist 
+// addEventListener adds a event handler onto the current nodelist element
 links.forEach(link => {
   link.addEventListener("mouseover", () => {
     link.classList.add("hovered");
@@ -28,13 +15,21 @@ links.forEach(link => {
 });
 
 // Pulsating Hero Banner
+// when the current window loads the function is invoked
 window.onload = function () {
+	// queryselector selects the first element that contains the class ".hero-banner"
     const hero = document.querySelector(".hero-banner");
-
+	// if hero banner doesnt exist it skips the rest of the code
     if (!hero){return};
-
+	// gets the id of the current window's hero banner
     const id = hero.id; 
-	// page2
+	
+	// console.log is used to help the developer check which part of the code a problem occurs
+	// classList.add adds a class to the element of the selected id
+	// classList.remove removes a class to the element of the selected id
+	// setTimeout() clears the stack, preventing stack overflow
+	
+	// Pulsating Hero Banner for page2
     if (id  === "forestPage") {
         console.log("Forest page detected");
 		 hero.classList.add("forestActive1");
@@ -55,7 +50,7 @@ window.onload = function () {
 			 },2500);
 		 }
     } 
-	// page3
+	//  Pulsating Hero Banner for page3
     else if (id  === "poachingPage") {
         console.log("Poaching page detected");
 		 hero.classList.add("poachingActive1");
@@ -76,7 +71,7 @@ window.onload = function () {
 			 },2500);
 		 }
     } 
-	// page4
+	// Pulsating Hero Banner for page4
 	else if (id  === "alienPage") {
         console.log("Alien page detected");
 		 hero.classList.add("alienActive1");
@@ -97,7 +92,7 @@ window.onload = function () {
 			 },2500);
 		 }
     } 
-	// page5
+	// Pulsating Hero Banner for page5
 	else if (id  === "communityPage") {
         console.log("Community page detected");
 		 hero.classList.add("communityActive1");
@@ -118,7 +113,7 @@ window.onload = function () {
 			 },2500);
 		 }
     } 
-	// page6
+	// Pulsating Hero Banner for page6
 	else if (id  === "summaryPage") {
         console.log("Summary page detected");
 		 hero.classList.add("summaryActive1");
@@ -139,7 +134,7 @@ window.onload = function () {
 			 },2500);
 		 }
     } 
-	// page7
+	// Pulsating Hero Banner for page7
 	else if (id  === "donatePage") {
 		
         console.log("Donate page detected");
@@ -162,13 +157,17 @@ window.onload = function () {
 		 }
     } 
     else {
+		
         console.log("Unknown hero banner");
         
     }
 }
+// ()=>{} is called an arrow function
+
 // observe when scrolling
 const targets = document.querySelectorAll(".watch");
-
+// IntersectionObserver is an API used to observe elements with respect to the root element or the viewport
+// It requires two inputs callback function and the options(threshold in this case)
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -178,16 +177,19 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
+	// when the element is 50% visible to the user it transitions
   threshold: 0.5
 });
 
 targets.forEach(t => observer.observe(t));
 
-// form
+// form validation
 document.getElementById("quiz_btn").addEventListener("click", 
 document.getElementById("quizForm").addEventListener("submit", function(event) {
+	// preventdefault() prevents the window from reloading 
   event.preventDefault();
 
+// checks if atleast one answer is selected before being allowed to submit the form
   const q1 = document.querySelector("input[name='q1']:checked");
   const q2 = document.querySelector("input[name='q2']:checked");
   const q3 = document.querySelector("option[name='q3']:checked");
@@ -204,7 +206,7 @@ document.getElementById("quizForm").addEventListener("submit", function(event) {
     document.getElementById("result").classList.add("text-danger");
     return;
   }
-
+// If the answer to the question is correct the user gets an increment to their score
   let score = 0;
   if (q1.value === "correct") score++;
   if (q2.value === "correct") score++;
@@ -217,7 +219,7 @@ document.getElementById("quizForm").addEventListener("submit", function(event) {
   if (q9.value === "correct") score++;
   if (q10.value === "correct") score++;
   
-
+// displays score out of 10
   document.getElementById("result").textContent = 
     `Your score: ${score}/10`;
 
@@ -228,7 +230,7 @@ document.getElementById("quiz_btn").addEventListener("click",()=>{
 	document.getElementById("quizhd").hidden=false;
 	document.getElementById("quiz_btn").hidden=true;
 });
-
+// section to move to the previous question and to the next question
 let currentQuestion = 0;
 const questions = document.querySelectorAll(".question");
 const prevBtn = document.getElementById("prevBtn");
@@ -253,13 +255,14 @@ function showQuestion(index) {
 }
 
 // Buttons
+// Button to advance to the next qustion when clicked
 nextBtn.addEventListener("click", () => {
   if (currentQuestion < questions.length - 1) {
     currentQuestion++;
     showQuestion(currentQuestion);
   }
 });
-
+// Button to retreat to the previous question when clicked
 prevBtn.addEventListener("click", () => {
   if (currentQuestion > 0) {
     currentQuestion--;
